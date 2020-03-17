@@ -228,6 +228,30 @@ header {
   z-index: 2001;
 }
 
+#picname:hover {
+  text-decoration: underline;
+}
+
+#picname-info {
+  display: none;
+  position: absolute;
+  top: 55%;
+  left: 64%;
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+  /* border: 3px solid red; */
+  /* width: 5%;
+  height: 5%; */
+
+  z-index: 2001;
+}
+}
+
 
 #entry1 {
   display: none;

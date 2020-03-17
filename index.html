@@ -44,14 +44,14 @@
     <div class="entry" id="picname">
       Bastiaan Woudt
       <br>
-      Exposé, 2018
+      <i>Exposé, 2018</i>
     </div>
     <div id="picname-info">
       Archival pigment print<br>
       Edition of 10<br>
       Available in sizes:<br>
-      45 x 60 cm (only edition 1-5)&nbsp;&nbsp;ciao<br>
-      90 x 120 cm
+      45 x 60 cm (only edition 1-5) _____ €3.500,-<br>
+      90 x 120 cm _____ €3.500,-
     </div>
     <div class="entry" id="entry1">+</div>
     <div class="entry" id="entry2">+</div>
@@ -175,6 +175,7 @@
       $("#navigation-menu").toggle();
       $("#text2").hide();
       $("#video2").hide();
+      $("#picname-info").hide();
     } );
 
     // $("#entry1").click( function() { 
@@ -192,6 +193,7 @@
       $("#text1").hide();
       $("#text3").hide();
       $("#navigation-menu").hide();
+      $("#picname-info").hide();
     } );
 
     // $("#entry3").click( function() { 
@@ -205,6 +207,7 @@
 
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
     $("#button-about").hover( function() { $("#text-about").toggle(); } );
+    $("#picname").click( function() { $("#picname-info").toggle(); } );
 
 
   // LOADER
