@@ -25,7 +25,15 @@
 
   <header>
     <div data-toggle="modal" data-target="#aboutModal"><p id="button-about">ABOUT</p></div>
-    <div style="text-align: right;"><p id="button-archive">BASTIAAN WOUDT (NL, 1987)</p></div>
+    <div style="text-align: right;"><p id="button-archive">VISIT SHOW</p>
+      <div class="navigation" id="navigation-menu">
+        <ul style="list-style-type:none">
+          <li>Eclipse, 2019</li>
+          <li>Circle, 2019</li>
+          <li>Wrapped, 2019</li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <section> <!-- background -->
@@ -33,7 +41,13 @@
   </section>
 
   <div class="container">
-    <div class="entry" id="artist">Exposé, 2018</div>
+    <div class="entry" id="artist">
+      Exposé, 2018
+      <br>
+      3,000€
+      <br>
+      Contact us
+    </div>
     <div class="entry" id="entry1">+</div>
     <div class="entry" id="entry2">+</div>
     <div class="entry" id="entry3">+</div>
@@ -63,7 +77,7 @@
           In 2014 Woudt was chosen as New Dutch Photography Talent, and in the same year, as well as in 2015, 
           he was nominated for an SO Award. He was named one of the biggest talents working today by 
           the prestigious magazine The British Journal of Photography in 2016, furthering his position as 
-          a talent on the rise. In 2017 he won the Van Vlissingen Art Foundation Award.  
+          a talent on the rise. In 2017 he won the Van Vlissingen Art Foundation Award.
       </p>
       <p id="text1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
@@ -74,10 +88,20 @@
       </p>
       <!-- <img id="gifVedelago1" src="assets/test-photo/rocket-gif.gif"> -->
       <p id="text2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          Bastiaan Woudt has seen a meteoric rise within the world of contemporary photography. 
+          After starting his own photography practice from scratch just a few years ago, with no experience 
+          or formal training, he has developed into a photographer with his own distinct signature 
+          style – abstract yet sharp, with a strong focus on detail. As a student of the history of 
+          photography through devouring photobooks and visiting museums and fairs, Woudt has a strong 
+          preference for classic subjects, such as portraits and nudes. Throughout his work we can see 
+          references to illustrious periods from photography such as Surrealism and the documentary photography 
+          of the 1960s and 70s. Thanks to a self-taught, sophisticated use of both camera and post-production 
+          techniques, he gives his own graphic and wholly contemporary twist to the classical.
+          <br><br>
+          In 2014 Woudt was chosen as New Dutch Photography Talent, and in the same year, as well as in 2015, 
+          he was nominated for an SO Award. He was named one of the biggest talents working today by 
+          the prestigious magazine The British Journal of Photography in 2016, furthering his position as 
+          a talent on the rise. In 2017 he won the Van Vlissingen Art Foundation Award.
       </p>
       <div id="video2">
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/380268973?color=000000&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -133,14 +157,41 @@
 
   <script>
 
-    $("#artist").click( function() { $("#text-artist").toggle(); } );
+    // $("#artist").click( function() { 
+    //   $("#text-artist").toggle();
+    //   $("#text1").hide();
+    //   $("#text2").hide();
+    //   $("#text3").hide();
+    //   $("#video2").hide();
+    // } );
 
-    $("#entry1").click( function() { $("#text1").toggle(); } );
+    $("#button-archive").click( function() { 
+      $("#navigation-menu").toggle();
+    } );
 
-    $("#entry2").click( function() { $("#text2").toggle(); } );
-    $("#entry2").click( function() { $("#video2").toggle(); } );
+    $("#entry1").click( function() { 
+      $("#text1").toggle();
+      $("#text-artist").hide();
+      $("#text2").hide();
+      $("#text3").hide();
+      $("#video2").hide();
+    } );
 
-    $("#entry3").click( function() { $("#text3").toggle(); } );
+    $("#entry2").click( function() { 
+      $("#text2").toggle();
+      $("#video2").toggle();
+      $("#text-artist").hide();
+      $("#text1").hide();
+      $("#text3").hide();
+    } );
+
+    $("#entry3").click( function() { 
+      $("#text3").toggle();
+      $("#text-artist").hide();
+      $("#text1").hide();
+      $("#text2").hide();
+      $("#video2").hide();
+    } );
 
 
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );

@@ -141,7 +141,11 @@ header {
 }
 
 #button-archive:hover {
-  cursor: no-drop;
+  cursor: pointer;
+}
+
+#navigation-menu {
+  display: none;
 }
 
 #text-about {
@@ -151,7 +155,7 @@ header {
   top: 25%;
 
   padding: 1%;
-  z-index: 101;
+  z-index: 3000;
   font-size: 20px;
   font-weight: 400;
   color: black;
@@ -198,7 +202,7 @@ section {
 
 #artist {
   position: absolute;
-  top: 17%;
+  top: 50%;
   left: 64%;
   color: black;
   font-weight: 400;
@@ -291,7 +295,7 @@ section {
 #text-artist {
   position: absolute;
   width: 30%;
-  top: 24%;
+  top: 17%;
   left: 64%;
 
   padding: 1%;
@@ -354,8 +358,8 @@ section {
 #video2 {
   position: absolute;
   width: 30%;
-  top: 42%;
-  left: 2%;
+  top: 15%;
+  right: 2%;
   z-index: 101;
   display: none;
   background-color: black;
