@@ -67,8 +67,8 @@ p {
 }
 
 #blink1 {
-  top: 28%;    /*change this*/
-  right: 35%;  /*change this*/
+  top: 60%;    /*change this*/
+  left: 45%;  /*change this*/
 }
 
 #blink2 {
@@ -153,7 +153,7 @@ header {
   color: black;
   display: none;
 
-  border: 5px solid black;
+  border: 2px solid black;
   -webkit-box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
@@ -192,26 +192,45 @@ section {
 ## Entries
 --------------------------------------------------------------*/
 
-#entry1 {
+#artist {
   position: absolute;
-  top: 14%;
-  right: 30%;
-  color: transparent;
-  font-weight: 800;
-  font-size: 150px;
+  top: 17%;
+  left: 64%;
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
   cursor: pointer;
   margin: 0;
   padding: 0;
 
-  /* border: 5px solid red; */
-  width: 10%;
-  height: 35%;
+  /* border: 3px solid red; */
+  /* width: 5%;
+  height: 5%; */
+
+  z-index: 2001;
+}
+
+
+#entry1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  font-weight: 400;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+  /* border: 3px solid red; */
+  /* width: 5%;
+  height: 5%; */
 
   z-index: 2001;
 }
 
 #entry1:hover {
-  cursor: url("assets/cursor_text.png"), zoom-in !important;
+  cursor: pointer;
   /* cursor: zoom-in; */
 }
 
@@ -219,22 +238,22 @@ section {
   position: absolute;
   top: 14%;
   left: 38%;
-  color: transparent;
-  font-weight: 800;
-  font-size: 150px;
+  color: black;
+  font-weight: 400;
+  font-size: 30px;
   cursor: pointer;
   margin: 0;
   padding: 0;
 
-  /* border: 5px solid blue; */
-  width: 20%;
-  height: 20%;
+  /* border: 3px solid blue; */
+  /* width: 5%;
+  height: 5%; */
 
   z-index: 2001;
 }
 
 #entry2:hover {
-  cursor: url("assets/cursor_text.png") 25 15, zoom-in !important;
+  cursor: pointer;
   /* cursor: zoom-in; */
 }
 
@@ -242,22 +261,22 @@ section {
   position: absolute;
   top: 35%;
   left: 9%;
-  color: transparent;
-  font-weight: 800;
-  font-size: 150px;
+  color: black;
+  font-weight: 400;
+  font-size: 30px;
   cursor: pointer;
   margin: 0;
   padding: 0;
 
-  /* border: 5px solid green; */
-  width: 35%;
-  height: 40%;
+  /* border: 3px solid green; */
+  /* width: 5%;
+  height: 5%; */
 
   z-index: 2001;
 }
 
 #entry3:hover {
-  cursor: url("assets/cursor_text.png") 25 15, zoom-in !important;
+  cursor: pointer;
   /* cursor: zoom-in; */
 }
 
@@ -265,20 +284,41 @@ section {
 ## Texts
 --------------------------------------------------------------*/
 
-#text1 {
+#text-artist {
   position: absolute;
-  width: 50%;
-  bottom: 5%;
-  left: 3%;
+  width: 30%;
+  top: 24%;
+  left: 64%;
 
   padding: 1%;
   z-index: 101;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
   color: black;
   display: none;
 
-  border: 5px solid black;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+
+  background-color: #f4f4f4;
+}
+
+#text1 {
+  position: absolute;
+  width: 20%;
+  bottom: 15%;
+  left: 1%;
+
+  padding: 1%;
+  z-index: 101;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  display: none;
+
+  border: 2px solid black;
   -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
@@ -294,12 +334,12 @@ section {
 
   padding: 1%;
   z-index: 101;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: black;
   display: none;
 
-  border: 5px solid black;
+  border: 2px solid black;
   -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
@@ -315,12 +355,12 @@ section {
 
   padding: 1%;
   z-index: 101;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: black;
   display: none;
 
-  border: 5px solid black;
+  border: 2px solid black;
   -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
@@ -335,7 +375,7 @@ section {
   left: 10%;
   z-index: 101;
   display: none;
-  border: 5px solid black;
+  border: 2px solid black;
   -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
@@ -348,7 +388,7 @@ section {
   right: 100px;
   z-index: 101;
   display: none;
-  border: 5px solid  #00ff00;
+  border: 2px solid  #00ff00;
   -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
@@ -391,7 +431,7 @@ footer {
   color: black;
   display: none;
 
-  border: 5px solid black;
+  border: 2px solid black;
   -webkit-box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 700px 600px rgba(0,0,0,0.75);

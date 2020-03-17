@@ -25,7 +25,7 @@
 
   <header>
     <div data-toggle="modal" data-target="#aboutModal"><p id="button-about">ABOUT</p></div>
-    <div style="text-align: right;"><p id="button-archive">ARCHIVE (COMING SOON)</p></div>
+    <div style="text-align: right;"><p id="button-archive">BASTIAAN WOUDT (NL, 1987)</p></div>
   </header>
 
   <section> <!-- background -->
@@ -33,9 +33,10 @@
   </section>
 
   <div class="container">
-    <div class="entry" id="entry1">.</div>
-    <div class="entry" id="entry2">.</div>
-    <div class="entry" id="entry3">.</div>
+    <div class="entry" id="artist">Exposé, 2018</div>
+    <div class="entry" id="entry1">+</div>
+    <div class="entry" id="entry2">+</div>
+    <div class="entry" id="entry3">+</div>
     <div class="blink-container" id="blink1">
       <div class="blink-pulse"></div>
     </div>
@@ -48,35 +49,42 @@
   </div>
   <div class="text">
       <!-- <img id="imgVedelago" src="assets/vedelago.jpg"> -->
-      <p id="text1">
-        <u>Abdul, 42, farmer</u>
-          <br>
-          Abdul had only ever used his Dodge Ram Turbo Diesel to transport crops,
-          sheep and goats before he decided to convert it into a <i>gilla</i> (or Technical) – an
-          improvised fighting vehicle. After two days of modifications to his pick-up,
-          Abdul was ready to head for the front line, where he is on duty for 12 hours at a time.
+      <p id="text-artist">
+          Bastiaan Woudt has seen a meteoric rise within the world of contemporary photography. 
+          After starting his own photography practice from scratch just a few years ago, with no experience 
+          or formal training, he has developed into a photographer with his own distinct signature 
+          style – abstract yet sharp, with a strong focus on detail. As a student of the history of 
+          photography through devouring photobooks and visiting museums and fairs, Woudt has a strong 
+          preference for classic subjects, such as portraits and nudes. Throughout his work we can see 
+          references to illustrious periods from photography such as Surrealism and the documentary photography 
+          of the 1960s and 70s. Thanks to a self-taught, sophisticated use of both camera and post-production 
+          techniques, he gives his own graphic and wholly contemporary twist to the classical.
           <br><br>
-          “When I am on the front line I am not scared; I am only scared of Allah. In
-          the future I dream of being free, and then we will see about the rest.”
+          In 2014 Woudt was chosen as New Dutch Photography Talent, and in the same year, as well as in 2015, 
+          he was nominated for an SO Award. He was named one of the biggest talents working today by 
+          the prestigious magazine The British Journal of Photography in 2016, furthering his position as 
+          a talent on the rise. In 2017 he won the Van Vlissingen Art Foundation Award.  
+      </p>
+      <p id="text1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <!-- <img id="gifVedelago1" src="assets/test-photo/rocket-gif.gif"> -->
       <p id="text2">
-        <u>UB-32 57MM Rocket Pod</u>
-          <br>
-          Originally attached to Soviet Mi-24 helicopters, this pod can be attached
-          to a Technical and still fire its 32 rockets, although there is no way to aim
-          them effectively. Their already low accuracy is further diminished when firing
-          from an improvised platform in an unintended role. Therefore, such systems
-          proved little more than curiosities in regular armies.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
       </p>
       <img id="gif2" src="assets/test photo/rocket-gif.gif">
       <p id="text3">
-        <u>Dodge Ram Turbo Diesel pick-up (<i>gilla</i>, or Technical)</u>
-          <br>
-          From Afghanistan to Sudan to Libya, the Toyota Hilux pick-up is the favored vehicle
-          for making Technicals. In the 1987 Libya-Chad war, Chadian Technical drivers
-          discovered that if a Hilux is driven through a minefield at over 100 kilometers
-          an hour, it won’t detonate the mines. And the open-back is perfect for all sorts of weaponry.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
       </p>
       <p id="text-about">
           “We never approach an image with a blank mind but with a mind already primed
@@ -122,16 +130,18 @@
 
   <script>
 
-	$("#entry1").hover( function() { $("#text1").toggle(); } );
+    $("#artist").click( function() { $("#text-artist").toggle(); } );
 
-  $("#entry2").hover( function() { $("#text2").toggle(); } );
-  $("#entry2").hover( function() { $("#gif2").toggle(); } );
+    $("#entry1").click( function() { $("#text1").toggle(); } );
 
-  $("#entry3").hover( function() { $("#text3").toggle(); } );
+    $("#entry2").click( function() { $("#text2").toggle(); } );
+    $("#entry2").click( function() { $("#gif2").toggle(); } );
+
+    $("#entry3").click( function() { $("#text3").toggle(); } );
 
 
-  $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
-  $("#button-about").hover( function() { $("#text-about").toggle(); } );
+    $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
+    $("#button-about").hover( function() { $("#text-about").toggle(); } );
 
 
   // LOADER
@@ -146,13 +156,13 @@
 
 
     // ZOOM
-		document.querySelector( '.container' ).addEventListener( 'click', function( event ) {
-			event.preventDefault();
-			zoom.to({
-        element: event.target,
-        padding: 40
-      });
-		} );
+		// document.querySelector( '.container' ).addEventListener( 'click', function( event ) {
+		// 	event.preventDefault();
+		// 	zoom.to({
+    //     element: event.target,
+    //     padding: 40
+    //   });
+		// } );
 
   </script>
 
