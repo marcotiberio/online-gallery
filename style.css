@@ -149,6 +149,15 @@ header {
   display: none;
 }
 
+.menu-button {
+  padding: 3px 0;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 #text-about {
   position: absolute;
   width: 50%;
@@ -174,14 +183,14 @@ header {
 ## Background
 --------------------------------------------------------------*/
 
-section {
+#section {
   position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
 
-  background-image: url('assets/bastiaan.jpg');
+  background-image: url('assets/expose.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -201,7 +210,7 @@ section {
 ## Entries
 --------------------------------------------------------------*/
 
-#artist {
+#picname {
   position: absolute;
   top: 50%;
   left: 64%;
@@ -221,6 +230,7 @@ section {
 
 
 #entry1 {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -267,6 +277,7 @@ section {
 }
 
 #entry3 {
+  display: none;
   position: absolute;
   top: 35%;
   right: 2%;

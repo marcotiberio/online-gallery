@@ -28,25 +28,30 @@
     <div style="text-align: right;"><p id="button-archive">VISIT SHOW</p>
       <div class="navigation" id="navigation-menu">
         <ul style="list-style-type:none">
-          <li>Eclipse, 2019</li>
-          <li>Circle, 2019</li>
-          <li>Wrapped, 2019</li>
+          <li class="menu-button" onclick="changePic1()">Expose, 2019</li>
+          <li class="menu-button" onclick="changePic2()">Circle, 2014</li>
+          <li class="menu-button" onclick="changePic3()">Carlos, 2019</li>
         </ul>
       </div>
     </div>
   </header>
 
-  <section> <!-- background -->
+  <section id="section"> <!-- background -->
     <!-- <img id="image" src="assets/test photo/Abdul_Waled_exp_final.jpg" alt=""> -->
   </section>
 
   <div class="container">
-    <div class="entry" id="artist">
+    <div class="entry" id="picname">
+      Bastiaan Woudt
+      <br>
       Exposé, 2018
-      <br>
-      3,000€
-      <br>
-      Contact us
+    </div>
+    <div id="picname-info">
+      Archival pigment print<br>
+      Edition of 10<br>
+      Available in sizes:<br>
+      45 x 60 cm (only edition 1-5)&nbsp;&nbsp;ciao<br>
+      90 x 120 cm
     </div>
     <div class="entry" id="entry1">+</div>
     <div class="entry" id="entry2">+</div>
@@ -147,7 +152,8 @@
 
   <footer>
     <div></div>
-    <div style="text-align: right;"><p id="button-caption">CAPTION</p></div>
+    <div></div>
+    <!-- <div style="text-align: right;"><p id="button-caption">CAPTION</p></div> -->
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -167,15 +173,17 @@
 
     $("#button-archive").click( function() { 
       $("#navigation-menu").toggle();
-    } );
-
-    $("#entry1").click( function() { 
-      $("#text1").toggle();
-      $("#text-artist").hide();
       $("#text2").hide();
-      $("#text3").hide();
       $("#video2").hide();
     } );
+
+    // $("#entry1").click( function() { 
+    //   $("#text1").toggle();
+    //   $("#text-artist").hide();
+    //   $("#text2").hide();
+    //   $("#text3").hide();
+    //   $("#video2").hide();
+    // } );
 
     $("#entry2").click( function() { 
       $("#text2").toggle();
@@ -183,15 +191,16 @@
       $("#text-artist").hide();
       $("#text1").hide();
       $("#text3").hide();
+      $("#navigation-menu").hide();
     } );
 
-    $("#entry3").click( function() { 
-      $("#text3").toggle();
-      $("#text-artist").hide();
-      $("#text1").hide();
-      $("#text2").hide();
-      $("#video2").hide();
-    } );
+    // $("#entry3").click( function() { 
+    //   $("#text3").toggle();
+    //   $("#text-artist").hide();
+    //   $("#text1").hide();
+    //   $("#text2").hide();
+    //   $("#video2").hide();
+    // } );
 
 
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
@@ -220,5 +229,19 @@
 
   </script>
 
+  <script>
+    function changePic1() {
+      document.getElementById('section').style.backgroundImage="url(assets/expose.jpg)";
+      document.getElementById('picname').innerHTML = "Expose, 2018";
+    }
+    function changePic2() {
+      document.getElementById('section').style.backgroundImage="url(assets/circle.jpg)";
+      document.getElementById('picname').innerHTML = "Circle, 2014";
+    }
+    function changePic3() {
+      document.getElementById('section').style.backgroundImage="url(assets/carlos.jpg)";
+      document.getElementById('picname').innerHTML = "Carlos, 2018";
+    }
+  </script>
 
 </body>
