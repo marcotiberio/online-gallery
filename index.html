@@ -37,7 +37,7 @@
     <div class="entry" id="entry1">+</div>
     <div class="entry" id="entry2">+</div>
     <div class="entry" id="entry3">+</div>
-    <div class="blink-container" id="blink1">
+    <!-- <div class="blink-container" id="blink1">
       <div class="blink-pulse"></div>
     </div>
     <div class="blink-container" id="blink2">
@@ -45,7 +45,7 @@
     </div>
     <div class="blink-container" id="blink3">
       <div class="blink-pulse"></div>
-    </div>
+    </div> -->
   </div>
   <div class="text">
       <!-- <img id="imgVedelago" src="assets/vedelago.jpg"> -->
@@ -79,7 +79,10 @@
           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
       </p>
-      <img id="gif2" src="assets/test photo/rocket-gif.gif">
+      <div id="video2">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/380268973?color=000000&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      <!-- <img id="gif2" src="assets/test photo/rocket-gif.gif"> -->
       <p id="text3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -135,7 +138,7 @@
     $("#entry1").click( function() { $("#text1").toggle(); } );
 
     $("#entry2").click( function() { $("#text2").toggle(); } );
-    $("#entry2").click( function() { $("#gif2").toggle(); } );
+    $("#entry2").click( function() { $("#video2").toggle(); } );
 
     $("#entry3").click( function() { $("#text3").toggle(); } );
 

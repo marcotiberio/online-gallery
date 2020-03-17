@@ -131,6 +131,10 @@ header {
   z-index: 100;
 }
 
+#button-about {
+  width: fit-content;
+}
+
 #button-about:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -236,7 +240,7 @@ section {
 
 #entry2 {
   position: absolute;
-  top: 14%;
+  top: 22%;
   left: 38%;
   color: black;
   font-weight: 400;
@@ -260,7 +264,7 @@ section {
 #entry3 {
   position: absolute;
   top: 35%;
-  left: 9%;
+  right: 2%;
   color: black;
   font-weight: 400;
   font-size: 30px;
@@ -328,9 +332,9 @@ section {
 
 #text2 {
   position: fixed;
-  width: 40%;
-  top: 60%;
-  right: 1%;
+  width: 25%;
+  top: 15%;
+  left: 2%;
 
   padding: 1%;
   z-index: 101;
@@ -346,12 +350,39 @@ section {
 
   background-color: #f4f4f4;
 }
+
+#video2 {
+  position: absolute;
+  width: 30%;
+  top: 42%;
+  left: 2%;
+  z-index: 101;
+  display: none;
+  background-color: black;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+}
+
+/* #gif2 {
+  position: absolute;
+  width: 30%;
+  top: 42%;
+  left: 2%;
+  z-index: 101;
+  display: none;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+} */
 
 #text3 {
   position: absolute;
-  width: 40%;
-  top: 50%;
-  right: 3%;
+  width: 30%;
+  top: 40%;
+  right: 2%;
 
   padding: 1%;
   z-index: 101;
@@ -366,19 +397,6 @@ section {
   box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
 
   background-color: #f4f4f4;
-}
-
-#gif2 {
-  position: absolute;
-  width: 30%;
-  bottom: 10%;
-  left: 10%;
-  z-index: 101;
-  display: none;
-  border: 2px solid black;
-  -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
 }
 
 #img {
@@ -411,6 +429,12 @@ footer {
   padding: 1%;
 
   z-index: 100;
+}
+
+#button-caption {
+  position: absolute;
+  width: fit-content;
+  right: 1%;
 }
 
 #button-caption:hover {
