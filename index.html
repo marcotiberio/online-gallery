@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Bigger Picture</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Bigger Picture is the photography blog where you can enjoy big photos, like you can rarely find on the Web, and learn more about their contexts.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="photo editor, curator, producer, photography, photo, magazine, editorial, art, photojournalism, creative, freelance">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Archivo:400,400i,500,600,700|Lusitana:400,700|Padauk:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="loader">
+    <h1 class="loader-text">THE BIGGER<br>PICTURE</h1>
+  </div>
+
+  <header>
+    <div data-toggle="modal" data-target="#aboutModal"><p id="button-about">ABOUT</p></div>
+    <div style="text-align: right;"><p id="button-archive">ARCHIVE (COMING SOON)</p></div>
+  </header>
+
+  <section> <!-- background -->
+    <!-- <img id="image" src="assets/test photo/Abdul_Waled_exp_final.jpg" alt=""> -->
+  </section>
+
+  <div class="container">
+    <div class="entry" id="entry1">.</div>
+    <div class="entry" id="entry2">.</div>
+    <div class="entry" id="entry3">.</div>
+    <div class="blink-container" id="blink1">
+      <div class="blink-pulse"></div>
+    </div>
+    <div class="blink-container" id="blink2">
+      <div class="blink-pulse"></div>
+    </div>
+    <div class="blink-container" id="blink3">
+      <div class="blink-pulse"></div>
+    </div>
+  </div>
+  <div class="text">
+      <!-- <img id="imgVedelago" src="assets/vedelago.jpg"> -->
+      <p id="text1">
+        <u>Abdul, 42, farmer</u>
+          <br>
+          Abdul had only ever used his Dodge Ram Turbo Diesel to transport crops,
+          sheep and goats before he decided to convert it into a <i>gilla</i> (or Technical) – an
+          improvised fighting vehicle. After two days of modifications to his pick-up,
+          Abdul was ready to head for the front line, where he is on duty for 12 hours at a time.
+          <br><br>
+          “When I am on the front line I am not scared; I am only scared of Allah. In
+          the future I dream of being free, and then we will see about the rest.”
+      </p>
+      <!-- <img id="gifVedelago1" src="assets/test-photo/rocket-gif.gif"> -->
+      <p id="text2">
+        <u>UB-32 57MM Rocket Pod</u>
+          <br>
+          Originally attached to Soviet Mi-24 helicopters, this pod can be attached
+          to a Technical and still fire its 32 rockets, although there is no way to aim
+          them effectively. Their already low accuracy is further diminished when firing
+          from an improvised platform in an unintended role. Therefore, such systems
+          proved little more than curiosities in regular armies.
+      </p>
+      <img id="gif2" src="assets/test photo/rocket-gif.gif">
+      <p id="text3">
+        <u>Dodge Ram Turbo Diesel pick-up (<i>gilla</i>, or Technical)</u>
+          <br>
+          From Afghanistan to Sudan to Libya, the Toyota Hilux pick-up is the favored vehicle
+          for making Technicals. In the 1987 Libya-Chad war, Chadian Technical drivers
+          discovered that if a Hilux is driven through a minefield at over 100 kilometers
+          an hour, it won’t detonate the mines. And the open-back is perfect for all sorts of weaponry.
+      </p>
+      <p id="text-about">
+          “We never approach an image with a blank mind but with a mind already primed
+          with memories, knowledge, prejudices.”
+          John A. Walker
+          <br><br>
+          The Bigger Picture is the photography blog where you can enjoy big photos,
+          like you can rarely find on the Web, and learn more about their contexts by zooming
+          in on selected details of the photos and read facts, curious information, anecdotes
+          about them. The Bigger Picture plays with the relationship between the picture and its
+          bigger picture, and wants to make you stay more on a picture, engage with it, think about it.
+          <br><br>
+          Curated by Mauro Bedoni, website developed by Defrost Studio.
+      </p>
+      <p id="text-caption">
+          Abdul, 42, farmer, coming back from the frontline with Waled in his modified
+          pick-up truck near Ajdabiya, Libya. June 1, 2011. Photo by James Mollison.
+          <br><br>
+          On February 15, 2011, Libyans began to protest against Qaddafi’s 41-year-old
+          dictatorship. Qaddafi’s response was to send his army to attack the protesters.
+          In response the civilian population began to arm itself and fight back. According
+          to several sources, the figures of casualties of rebel and loyalist forces are similar.
+          <br><br>
+          "In May when Qaddafi had gone into hiding, I travelled with an assistant
+          to photograph the trucks. We set up the camera at the last check point, on the
+          road to the front line, where my assistant ran out to stop them, before they went
+          into battle."
+          <br>
+          – James Mollison
+      </p>
+  </div>
+
+
+  <footer>
+    <div></div>
+    <div style="text-align: right;"><p id="button-caption">CAPTION</p></div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="zoom.js"></script>
+
+
+  <script>
+
+  // function show1() {
+    // document.getElementById("image").style.width = "200%";
+    // document.getElementById("image").style.top = "80%";
+    // document.getElementById("image").style.left = "40%";
+    // document.getElementById("image").style.filter = "brightness(20%)";
+    // document.getElementById("image-focus1").style.height = "300%";
+    // document.getElementById("image-focus1").style.top = "-200%";
+    // document.getElementById("image-focus1").style.left = "-65%";
+    // document.getElementById("image-focus2").style.height = "300%";
+    // document.getElementById("image-focus2").style.top = "-200%";
+    // document.getElementById("image-focus2").style.left = "-65%";
+    // document.getElementById("svg1").style.bottom = "0";
+    // document.getElementById("svg1").style.left = "0";
+    // document.getElementById("svg1").style.width = "100%";
+    // document.getElementById("svg1").style.height = "100%";
+    // document.getElementById("rect").style.x = "0";
+    // document.getElementById("rect").style.y = "0";
+    // document.getElementById("rect").style.width = "200%";
+    // document.getElementById("rect").style.height = "100%";
+  //   document.getElementById("#blink2").style.display = "none";
+  //   document.getElementById("#blink3").style.display = "none";
+  //   document.getElementById("#text-about").style.display = "none";
+  //   document.getElementById("#text-caption").style.display = "none";
+  //   document.getElementById("#text2").style.display = "none";
+  //   document.getElementById("#text3").style.display = "none";
+  // }
+  // function hide1() {
+  //   document.getElementById("image").style.height = "100%";
+  //   document.getElementById("image").style.top = "0";
+  //   document.getElementById("image").style.left = "0";
+  //   document.getElementById("image").style.filter = "brightness(100%)";
+  //   document.getElementById("image-focus1").style.height = "100%";
+  //   document.getElementById("image-focus1").style.top = "0";
+  //   document.getElementById("image-focus1").style.left = "0";
+  //   document.getElementById("image-focus2").style.height = "100%";
+  //   document.getElementById("image-focus2").style.top = "0";
+  //   document.getElementById("image-focus2").style.left = "0";
+  //   document.getElementById("svg1").style.bottom = "4%";
+  //   document.getElementById("svg1").style.left = "28%";
+  //   document.getElementById("svg1").style.width = "20%";
+  //   document.getElementById("svg1").style.height = "25%";
+  //   document.getElementById("rect").style.x = "0";
+  //   document.getElementById("rect").style.y = "0";
+  //   document.getElementById("rect").style.width = "90%";
+  //   document.getElementById("rect").style.height = "90%";
+  // }
+
+	$("#entry1").hover( function() { $("#text1").toggle(); } );
+
+  $("#entry2").hover( function() { $("#text2").toggle(); } );
+  $("#entry2").hover( function() { $("#gif2").toggle(); } );
+
+  $("#entry3").hover( function() { $("#text3").toggle(); } );
+
+
+  $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
+  $("#button-about").hover( function() { $("#text-about").toggle(); } );
+
+
+  // LOADER
+  $(function() {
+      // setTimeout() function will be fired after page is loaded
+      // it will wait for 5 sec. and then will fire
+      // $("#successMessage").hide() function
+      setTimeout(function() {
+        $("#loader").fadeOut()
+      }, 2000);
+    });
+
+
+    // ZOOM
+		document.querySelector( '.container' ).addEventListener( 'click', function( event ) {
+			event.preventDefault();
+			zoom.to({
+        element: event.target,
+        padding: 40
+      });
+		} );
+
+  </script>
+
+
+</body>
