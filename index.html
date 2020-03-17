@@ -17,20 +17,21 @@
 
 </head>
 
-<body style="font-family: ClanOT-NarrowBook;">
+<body>
 
   <!-- <div id="loader">
     <h1 class="loader-text">Online<br>Gallery</h1>
   </div> -->
 
   <header>
-    <div data-toggle="modal" data-target="#aboutModal"><p id="button-about">ABOUT</p></div>
-    <div style="text-align: right;"><p id="button-archive">VISIT SHOW</p>
+    <div data-toggle="modal" data-target="#aboutModal"><p id="button-about">HOME</p></div>
+    <div style="text-align: right;"><p id="button-archive">THUMBNAILS</p>
       <div class="navigation" id="navigation-menu">
         <ul style="list-style-type:none">
-          <li class="menu-button" onclick="changePic1()">Expose, 2019</li>
+          test
+          <!-- <li class="menu-button" onclick="changePic1()">Expose, 2019</li>
           <li class="menu-button" onclick="changePic2()">Circle, 2014</li>
-          <li class="menu-button" onclick="changePic3()">Carlos, 2019</li>
+          <li class="menu-button" onclick="changePic3()">Carlos, 2019</li> -->
         </ul>
       </div>
     </div>
@@ -41,19 +42,15 @@
   </section>
 
   <div class="container">
-    <div class="entry" id="picname">
-      Bastiaan Woudt
-      <br>
-      <i>Exposé, 2018</i>
-    </div>
+    <div class="entry" id="picname"></div>
     <div id="picname-info">
-      Archival pigment print<br>
-      Edition of 10<br>
-      Available in sizes:<br>
-      45 x 60 cm (only edition 1-5) _____ €3.500,-<br>
-      90 x 120 cm _____ €3.500,-
+      Varusa Hat, 2016<br>
+      Archival Pigment Print<br>
+      Size: 130 x 85 cm.<br>
+      Edition of 3<br><br><br>
+      € 15.000,-
     </div>
-    <div class="entry" id="entry1">+</div>
+    <div class="entry" id="entry1"></div>
     <div class="entry" id="entry2">+</div>
     <div class="entry" id="entry3">+</div>
     <!-- <div class="blink-container" id="blink1">
@@ -69,8 +66,8 @@
   <div class="text">
       <!-- <img id="imgVedelago" src="assets/vedelago.jpg"> -->
       <p id="text-artist">
-          Bastiaan Woudt has seen a meteoric rise within the world of contemporary photography. 
-          After starting his own photography practice from scratch just a few years ago, with no experience 
+          Bastiaan Woudt (1987, NL) has seen a meteoric rise within the world of contemporary photography. 
+          After starting his own photography practice from scratch a mere five years ago, with no experience 
           or formal training, he has developed into a photographer with his own distinct signature 
           style – abstract yet sharp, with a strong focus on detail. As a student of the history of 
           photography through devouring photobooks and visiting museums and fairs, Woudt has a strong 
@@ -172,13 +169,13 @@
       $("#picname-info").hide();
     } );
 
-    // $("#entry1").click( function() { 
-    //   $("#text1").toggle();
-    //   $("#text-artist").hide();
-    //   $("#text2").hide();
-    //   $("#text3").hide();
-    //   $("#video2").hide();
-    // } );
+    $("#entry1").click( function() { 
+      $("#text-artist").toggle();
+      $("#text1").hide();
+      $("#text2").hide();
+      $("#text3").hide();
+      $("#video2").hide();
+    } );
 
     $("#entry2").click( function() { 
       $("#text2").toggle();
@@ -187,7 +184,6 @@
       $("#text1").hide();
       $("#text3").hide();
       $("#navigation-menu").hide();
-      $("#picname-info").hide();
     } );
 
     // $("#entry3").click( function() { 

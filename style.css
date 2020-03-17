@@ -2,7 +2,7 @@
   font-family: 'ClanOT-NarrowBook';
   font-style: normal;
   font-weight: normal;
-  src: local('ClanOT-NarrowBook'), url('ClanOT-NarrowBook.woff') format('woff');
+  src: local('ClanOT-NarrowBook'), url('assets/font/ClanOT-NarrowBook.woff') format('woff');
   }
   
   
@@ -10,7 +10,7 @@
   font-family: 'ClanOT-NarrowThin';
   font-style: normal;
   font-weight: normal;
-  src: local('ClanOT-NarrowThin'), url('ClanOT-NarrowThin.woff') format('woff');
+  src: local('ClanOT-NarrowThin'), url('assets/font/ClanOT-NarrowThin.woff') format('woff');
   }
   
   
@@ -18,7 +18,7 @@
   font-family: 'ClanOT-NarrowNews';
   font-style: normal;
   font-weight: normal;
-  src: local('ClanOT-NarrowNews'), url('ClanOT-NarrowNews.woff') format('woff');
+  src: local('ClanOT-NarrowNews'), url('assets/font/ClanOT-NarrowNews.woff') format('woff');
   }
   
   
@@ -26,7 +26,7 @@
   font-family: 'ClanOT-NarrowMedium';
   font-style: normal;
   font-weight: normal;
-  src: local('ClanOT-NarrowMedium'), url('ClanOT-NarrowMedium.woff') format('woff');
+  src: local('ClanOT-NarrowMedium'), url('assets/font/ClanOT-NarrowMedium.woff') format('woff');
   }
   
   
@@ -34,7 +34,7 @@
   font-family: 'ClanOT-NarrowBold';
   font-style: normal;
   font-weight: normal;
-  src: local('ClanOT-NarrowBold'), url('ClanOT-NarrowBold.woff') format('woff');
+  src: local('ClanOT-NarrowBold'), url('assets/font/ClanOT-NarrowBold.woff') format('woff');
   }
   
   
@@ -42,7 +42,7 @@
   font-family: 'ClanOT-NarrowBlack';
   font-style: normal;
   font-weight: normal;
-  src: local('ClanOT-NarrowBlack'), url('ClanOT-NarrowBlack.woff') format('woff');
+  src: local('ClanOT-NarrowBlack'), url('assets/font/ClanOT-NarrowBlack.woff') format('woff');
   }
   
   
@@ -182,6 +182,7 @@ header {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
+  font-size: 14px;
   font-weight: 400;
 
   padding: 1%;
@@ -248,7 +249,7 @@ header {
   width: 100vw;
   height: 100vh;
 
-  background-image: url('assets/expose.jpg');
+  background-image: url('assets/varusa-hat.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -270,18 +271,22 @@ header {
 
 #picname {
   position: absolute;
-  top: 50%;
-  left: 64%;
+  top: 46%;
+  left: 63%;
+  width: 3.5%;
+  height: 5%;
   color: black;
+  background-color: white;
   font-weight: 400;
   font-size: 15px;
   cursor: pointer;
   margin: 0;
   padding: 0;
 
-  /* border: 3px solid red; */
-  /* width: 5%;
-  height: 5%; */
+  /* border: 1px solid black; */
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
 
   z-index: 2001;
 }
@@ -293,29 +298,40 @@ header {
 #picname-info {
   display: none;
   position: absolute;
-  top: 57%;
-  left: 64%;
+  top: 46%;
+  left: 63%;
+  width: 150px;
+  height: auto;
+
+  padding: 10px;
+
   color: black;
-  font-weight: 400;
-  font-size: 15px;
+  background-color: white;
+
+  font-family: 'ClanOT-NarrowMedium';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1rem;
+  letter-spacing: 1px;
+
   cursor: pointer;
   margin: 0;
-  padding: 0;
 
   /* border: 3px solid red; */
-  /* width: 5%;
-  height: 5%; */
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
 
   z-index: 2001;
-}
 }
 
 
 #entry1 {
-  display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 72%;
+  left: 11%;
+  width: 11%;
+  height: 10%;
   color: black;
   font-weight: 400;
   font-size: 30px;
@@ -323,9 +339,7 @@ header {
   margin: 0;
   padding: 0;
 
-  /* border: 3px solid red; */
-  /* width: 5%;
-  height: 5%; */
+  /* border: 1px solid black; */
 
   z-index: 2001;
 }
@@ -387,24 +401,26 @@ header {
 --------------------------------------------------------------*/
 
 #text-artist {
+  display: none;
   position: absolute;
-  width: 30%;
-  top: 17%;
-  left: 64%;
+  width: 20%;
+  top: 10%;
+  left: 7%;
 
   padding: 1%;
   z-index: 101;
-  font-size: 14px;
-  font-weight: 400;
-  color: black;
-  display: none;
+  font-family: 'ClanOT-NarrowBook';
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2rem;
 
-  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+
+  /* border: 1px solid black;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
-  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
-
-  background-color: #f4f4f4;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75); */
 }
 
 #text1 {
