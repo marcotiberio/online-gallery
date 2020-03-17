@@ -142,6 +142,7 @@ header {
 
 #button-archive:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 #navigation-menu {
