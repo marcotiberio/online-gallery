@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Archivo', sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
 
   overflow: hidden;
 
@@ -172,7 +172,7 @@ section {
   width: 100vw;
   height: 100vh;
 
-  background-image: url('assets/test photo/Abdul_Waled_exp_final.jpg');
+  background-image: url('assets/bastiaan.jpg');
   background-size: cover;
   background-position: center;
 }
