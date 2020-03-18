@@ -61,9 +61,7 @@ html {
   margin: 0;
   padding: 0;
 
-  /* overflow: auto; */
-  overflow: hidden;
-
+  overflow: auto;
 }
 
 body {
@@ -75,8 +73,8 @@ body {
   font-family: 'ClanOT-NarrowBook';
   font-weight: normal;
 
-  /* overflow: auto; */
-  overflow: hidden;
+  overflow: auto;
+  /* overflow: hidden; */
 
 }
 
