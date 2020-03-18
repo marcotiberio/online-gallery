@@ -92,7 +92,7 @@ p {
 }
 
 .loader-text {
-  font-size: 13em;
+  padding: 50% 20%;
   /* animation: blinker 1s linear infinite; */
 }
 
