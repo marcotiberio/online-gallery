@@ -587,10 +587,7 @@ footer {
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 900px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+  and (max-width: 375px) { 
 
     #loader {
       display: block;
@@ -611,10 +608,7 @@ footer {
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 900px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+  and (min-width: 376px) { 
 
     #loader {
       display: none;
