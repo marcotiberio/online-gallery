@@ -174,7 +174,8 @@ p {
 --------------------------------------------------------------*/
 
 header {
-  position: relative;
+  position: fixed;
+  width: 98%;
   top: 0;
 
   display: grid;
