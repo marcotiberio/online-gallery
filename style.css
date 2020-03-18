@@ -88,17 +88,7 @@ p {
 --------------------------------------------------------------*/
 
 #loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-  background-color: black;
-  color: white;
-  text-align: center;
-
-  z-index: 5000;
+  display: none;
 }
 
 .loader-text {
@@ -595,17 +585,43 @@ footer {
 ## Mobile
 --------------------------------------------------------------*/
 
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
 
+    #loader {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    
+      background-color: black;
+      color: white;
+      text-align: center;
+    
+      z-index: 5000;
+    }
 
+}
+
+/* Landscape */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 900px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
 
+    #loader {
+      display: none;
+    }
+
     #text-artist {
       font-size: 8px;
     }
-
 
 }
