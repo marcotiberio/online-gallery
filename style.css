@@ -351,6 +351,7 @@ header {
 }
 
 #entry2 {
+  display: none;
   position: absolute;
   top: 20%;
   left: 38%;
@@ -597,8 +598,13 @@ footer {
 
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
+  and (max-device-width: 900px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+
+    #text-artist {
+      font-size: 8px;
+    }
+
 
 }
