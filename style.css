@@ -581,7 +581,7 @@ footer {
 --------------------------------------------------------------*/
 
 /* Portrait */
-/* @media only screen 
+@media only screen 
   and (max-device-width: 375px) { 
 
     #loader {
@@ -603,7 +603,7 @@ footer {
       padding: 50% 20% 1% 20%;
     }
 
-} */
+}
 
 /* Landscape */
 /* @media only screen 
