@@ -73,7 +73,8 @@ body {
   font-family: 'ClanOT-NarrowBook';
   font-weight: normal;
 
-  overflow: hidden;
+  overflow: auto;
+  /* overflow: hidden; */
 
 }
 
