@@ -582,7 +582,7 @@ footer {
 
 /* Portrait */
 @media only screen 
-  and (max-device-width: 451px) { 
+  and (max-device-width: 375px) { 
 
     #loader {
       display: block;
@@ -607,7 +607,7 @@ footer {
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 451px) and (orientation:landscape) { 
+  and (min-device-width: 375px) and (orientation:landscape) { 
 
     #loader {
       display: none;
