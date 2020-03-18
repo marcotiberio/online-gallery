@@ -91,11 +91,6 @@ p {
   display: none;
 }
 
-.loader-text {
-  padding: 50% 20%;
-  /* animation: blinker 1s linear infinite; */
-}
-
 /* @keyframes blinker {
   50% {
     opacity: 0;
@@ -602,6 +597,10 @@ footer {
       text-align: center;
     
       z-index: 5000;
+    }
+
+    .loader-text {
+      padding: 50% 20% 5% 20%;
     }
 
 }
