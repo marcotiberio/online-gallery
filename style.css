@@ -606,7 +606,7 @@ footer {
 }
 
 /* Landscape */
-/* @media only screen 
+@media only screen 
   and (min-device-width: 376px) { 
 
     #loader {
@@ -617,4 +617,4 @@ footer {
       top: 5%;
     }
 
-} */
+}
