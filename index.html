@@ -276,4 +276,22 @@
     }
   </script>
 
+<script type="text/javascript">
+  var images = new Array()
+  function preload() {
+      for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+      }
+  }
+  preload(
+      "assets/bastiaanwoudt_000.jpg",
+      "assets/bastiaanwoudt_001.jpg",
+      "assets/bastiaanwoudt_002.jpg",
+      "assets/bastiaanwoudt_003.jpg",
+      "assets/bastiaanwoudt_004.jpg",
+      "assets/bastiaanwoudt_005.jpg"
+  )
+</script>
+
 </body>
