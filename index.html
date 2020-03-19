@@ -36,10 +36,12 @@
     <div style="text-align: right;"><p id="button-archive">THUMBNAILS</p>
       <div class="navigation" id="navigation-menu">
         <ul style="list-style-type:none">
-          test
-          <!-- <li class="menu-button" onclick="changePic1()">Expose, 2019</li>
-          <li class="menu-button" onclick="changePic2()">Circle, 2014</li>
-          <li class="menu-button" onclick="changePic3()">Carlos, 2019</li> -->
+          <li class="menu-button" onclick="changePic0()">Home</li>
+          <li class="menu-button" onclick="changePic1()">Testphoto001, 2019</li>
+          <li class="menu-button" onclick="changePic2()">Testphoto002, 2019</li>
+          <!-- <li class="menu-button" onclick="changePic3()">Testphoto003, 2019</li>
+          <li class="menu-button" onclick="changePic4()">Testphoto004, 2019</li>
+          <li class="menu-button" onclick="changePic5()">Testphoto005, 2019</li> -->
         </ul>
       </div>
     </div>
@@ -231,24 +233,47 @@
   </script>
 
   <script>
+    function changePic0() {
+      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_000.jpg)";
+      document.getElementById('section').style.transition = "ease-in 0.2s";
+      document.getElementById('picname').style.transition = "ease-in 0.2s";
+      document.getElementById('picname').style.top = "46%";
+      document.getElementById('picname').style.left = "63%";
+      document.getElementById('entry1').style.display = "block";
+    }
     function changePic1() {
-      document.getElementById('section').style.backgroundImage="url(assets/expose.jpg)";
-      document.getElementById('picname').innerHTML = "Expose, 2018";
+      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_001.jpg)";
+      document.getElementById('section').style.transition = "ease-in 0.2s";
+      document.getElementById('picname').style.transition = "ease-in 0.2s";
+      document.getElementById('picname').style.left = "45%";
+      document.getElementById('picname-info').style.left = "36.8%";
+      document.getElementById('entry1').style.display = "none";
     }
     function changePic2() {
-      document.getElementById('section').style.backgroundImage="url(assets/circle.jpg)";
-      document.getElementById('picname').innerHTML = "Circle, 2014";
+      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_002.jpg)";
+      document.getElementById('section').style.transition = "ease-in 0.2s";
+      document.getElementById('picname').style.transition = "ease-in 0.2s";
+      document.getElementById('picname').style.top = "35%";
+      document.getElementById('picname').style.left = "55%";
+      document.getElementById('picname-info').style.top = "35%";
+      document.getElementById('picname-info').style.left = "55%";
+      document.getElementById('entry1').style.display = "none";
     }
-    function changePic3() {
-      document.getElementById('section').style.backgroundImage="url(assets/carlos.jpg)";
-      document.getElementById('picname').innerHTML = "Carlos, 2018";
-    }
+    // function changePic3() {
+    //   document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_003.jpg)";
+    //   document.getElementById('picname').style.display = "none";
+    //   document.getElementById('entry1').style.display = "none";
+    // }
+    // function changePic4() {
+    //   document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_004.jpg)";
+    //   document.getElementById('picname').style.display = "none";
+    //   document.getElementById('entry1').style.display = "none";
+    // }
+    // function changePic5() {
+    //   document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_005.jpg)";
+    //   document.getElementById('picname').style.display = "none";
+    //   document.getElementById('entry1').style.display = "none";
+    // }
   </script>
-
-<!-- <script>
-  if(window.innerWidth > window.innerHeight){
-    document.getElementById('loader').style.display = "none";
-  }
-</script> -->
 
 </body>

@@ -5,7 +5,7 @@
   src: local('ClanOT-NarrowBook'), url('assets/font/ClanOT-NarrowBook.woff') format('woff');
   }
   
-  
+
   @font-face {
   font-family: 'ClanOT-NarrowThin';
   font-style: normal;
@@ -53,6 +53,15 @@
   src: local('ClanOT-NarrowUltra'), url('ClanOT-NarrowUltra.woff') format('woff');
   }
 
+/*--------------------------------------------------------------
+## Desktop
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Desktop
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Desktop
+--------------------------------------------------------------*/
 
 
 html {
@@ -236,7 +245,7 @@ header {
   width: 100vw;
   height: 100vh;
 
-  background-image: url('assets/varusa-hat.jpg');
+  background-image: url('assets/bastiaanwoudt_000.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -614,7 +623,7 @@ footer {
     }
 
     header {
-      top: 5%;
+      top: %;
     }
 
 }
