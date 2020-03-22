@@ -372,27 +372,52 @@ header {
   width: 100vw;
   height: 100vh;
 
-  background-image: url('assets/bastiaanwoudt_000.jpg');
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  background-image: url('assets/backgrounds/background_start.jpg');
   background-size: cover;
   background-position: center;
 }
 
-/* #image {
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  position: absolute;
-  margin: 0;
+.sticker-start {
+  margin: 10% 3% 20% 3%;
 
-  ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-} */
+  background-color: white;
+
+  -webkit-box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.4);
+  box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.4);
+}
+
+.sticker-start #header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.sticker-start #header div {
+  text-align: center;
+}
+
+.sticker-start #header img{
+  padding: 8%;
+  width: 60%;
+}
+
+
 
 /*--------------------------------------------------------------
 ## Entries
 --------------------------------------------------------------*/
 
 #picname {
+  display: none;
   position: absolute;
   top: 46%;
   left: 63%;
