@@ -268,6 +268,7 @@ header {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
+  line-height: 1.2rem;
 }
 
 #contactModal .modal-content-grid div {
@@ -280,6 +281,7 @@ header {
 #contactModal .modal-content-grid div p {
   font-size: 12px;
   font-style: italic;
+  line-height: 1.2rem;
 }
 
 #infoModal .modal-content-grid div h3 {
@@ -378,22 +380,23 @@ header {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  background-image: url('assets/backgrounds/background_start.jpg');
+  background-image: url('assets/background-start.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.sticker-start {
-  margin: 10% 3% 20% 3%;
+#sticker-start {
+  margin: 10% 8% 20% 8%;
 
   background-color: white;
 
-  -webkit-box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.4);
-  -moz-box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.4);
-  box-shadow: 10px 10px 7px 0px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
 }
 
-.sticker-start #header {
+#sticker-start #header {
+  margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -401,21 +404,31 @@ header {
   grid-row-gap: 0px;
 }
 
-.sticker-start #header div {
+#sticker-start #header div {
   text-align: center;
 }
 
-.sticker-start #header img{
+#sticker-start #header img{
   padding: 8%;
   width: 60%;
 }
 
-.sticker-start #intro {
-  padding: 1% 25% 1% 10%;
+#sticker-start #intro {
+  padding: 3% 15% 1% 10%;
   
   font-size: 12px;
   line-height: 1.2rem;
   letter-spacing: 1px;
+}
+
+#sticker-start #intro a {
+  color: black;
+  text-decoration: none;
+}
+
+#sticker-start #intro a:hover {
+  text-decoration: underline;
+  transition: all .5s ease-in;
 }
 
 

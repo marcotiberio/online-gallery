@@ -36,7 +36,7 @@
       <p class="button" id="button-about">KAHMANN GALLERY</p>
     </div>
     <div data-toggle="" data-target="#" style="text-align: center;">
-      <p class="button" id="button-about">START</p>
+      <p class="button" id="button-start" onclick="changePicStart()">START</p>
     </div>
     <div data-toggle="" data-target="#" style="text-align: center;">
       <p class="button" id="button-info">INFO</p>
@@ -71,19 +71,19 @@
           <img src="assets/thumbnails/torso.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">Torso, 2020</p>
         </div>
-        <div class="thumbnail">
+        <div class="thumbnail" onclick="changePic2()">
           <img src="assets/thumbnails/secrete1.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">Secrete I, 2020</p>
         </div>
-        <div class="thumbnail">
+        <div class="thumbnail" onclick="changePic3()">
           <img src="assets/thumbnails/curve.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">Curve, 2020</p>
         </div>
-        <div class="thumbnail">
+        <div class="thumbnail" onclick="changePic4()">
           <img src="assets/thumbnails/j.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">"J", 2020</p>
         </div>
-        <div class="thumbnail">
+        <div class="thumbnail" onclick="changePic5()">
           <img src="assets/thumbnails/halo.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">Halo, 2019</p>
         </div>
@@ -251,7 +251,7 @@
 
   <section id="section"> <!-- background -->
     <div></div>
-    <div class="sticker-start" style="border: 5px solid black;">
+    <div id="sticker-start">
       <div id="header">
         <div>
           <img src="assets/KG Logo new.png" alt="thumgnail1" id="kahmann-logo">
@@ -271,6 +271,8 @@
           <br><br>
           <i>Enjoy your virtual gallery tour from the Kahmann Gallery team.</i>
         </p>
+        <br><br><br>
+        <p onclick="changePicStart()" style="text-align: right;">Just click here for the next page ></p>
       </div>
     </div>
     <div></div>
@@ -422,18 +424,21 @@
       $("#thumbnailsModal").toggle();
       $("#contactModal").hide();
       $("#infoModal").hide();
+      $("#sticker-start").hide();
     } );
     
     $("#button-contact").click( function() { 
       $("#contactModal").toggle();
       $("#thumbnailsModal").hide();
       $("#infoModal").hide();
+      $("#sticker-start").hide();
     } );
     
     $("#button-info").click( function() { 
       $("#infoModal").toggle();
       $("#thumbnailsModal").hide();
       $("#contactModal").hide();
+      $("#sticker-start").hide();
     } );
     
     
@@ -442,6 +447,16 @@
   </script>
 
   <script>
+    function changePicStart() {
+      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_000.jpg)";
+      document.getElementById('section').style.transition = "ease-in 0.2s";
+      document.getElementById('sticker-start').style.display = "none";
+      document.getElementById('infoModal').style.display = "none";
+      document.getElementById('contactModal').style.display = "none";
+      // document.getElementById('picname').style.transition = "ease-in 0.2s";
+      // document.getElementById('picname').style.top = "46%";
+      // document.getElementById('picname').style.left = "63%";
+    }
     function changePic0() {
       document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_000.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
@@ -461,33 +476,31 @@
       // document.getElementById('picname-info').style.left = "36.8%";
     }
     function changePic2() {
-      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_002.jpg)";
-      document.getElementById('section').style.transition = "ease-in 0.2s";
-      document.getElementById('picname').style.display = "none";
-      // document.getElementById('picname').style.transition = "ease-in 0.2s";
-      // document.getElementById('picname').style.top = "35%";
-      // document.getElementById('picname').style.left = "55%";
-      // document.getElementById('picname-info').style.top = "35%";
-      // document.getElementById('picname-info').style.left = "55%";
-      document.getElementById('entry1').style.display = "none";
-    }
-    function changePic3() {
       document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_003.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
-      document.getElementById('picname').style.display = "none";
-      document.getElementById('entry1').style.display = "none";
+      document.getElementById('thumbnailsModal').style.display = "none";
+      document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";
+      // document.getElementById('picname').style.transition = "ease-in 0.2s";
+      // document.getElementById('picname').style.left = "45%";
+      // document.getElementById('picname-info').style.left = "36.8%";
     }
-    function changePic4() {
+    function changePic3() {
       document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_004.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
-      document.getElementById('picname').style.display = "none";
-      document.getElementById('entry1').style.display = "none";
+      document.getElementById('thumbnailsModal').style.display = "none";
+      document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";
+      // document.getElementById('picname').style.transition = "ease-in 0.2s";
+      // document.getElementById('picname').style.left = "45%";
+      // document.getElementById('picname-info').style.left = "36.8%";
     }
-    function changePic5() {
+    function changePic4() {
       document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_005.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
-      document.getElementById('picname').style.display = "none";
-      document.getElementById('entry1').style.display = "none";
+      document.getElementById('thumbnailsModal').style.display = "none";
+      document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";
+      // document.getElementById('picname').style.transition = "ease-in 0.2s";
+      // document.getElementById('picname').style.left = "45%";
+      // document.getElementById('picname-info').style.left = "36.8%";
     }
   </script>
 
