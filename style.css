@@ -410,6 +410,14 @@ header {
   width: 60%;
 }
 
+.sticker-start #intro {
+  padding: 1% 25% 1% 10%;
+  
+  font-size: 12px;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+}
+
 
 
 /*--------------------------------------------------------------
