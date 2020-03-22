@@ -55,6 +55,22 @@
   src: local('ClanOT-NarrowUltra'), url('ClanOT-NarrowUltra.woff') format('woff');
   }
 
+/* Arnhem */
+
+@font-face {
+  font-family: 'Arnhem-Blond';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arnhem-Blond'), url('assets/font/Arnhem-Blond.otf') format('otf');
+  }
+
+@font-face {
+  font-family: 'Arnhem-BlondItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arnhem-BlondItalic'), url('assets/font/Arnhem-BlondItalic.otf') format('otf');
+  }
+
 /*--------------------------------------------------------------
 ## Desktop
 --------------------------------------------------------------*/
@@ -145,7 +161,7 @@ header {
   
 }
 
-#button-archive:hover {
+#button-thumbnails:hover {
   
 }
 
@@ -266,20 +282,31 @@ header {
   font-style: italic;
 }
 
-#infoModal .modal-content-grid div h3, #infoModal .modal-content-grid div h6 {
+#infoModal .modal-content-grid div h3 {
   margin-top: 0;
   padding-top: 0;
   
   text-align: center;
   text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'ClanOT-NarrowBook';
+  font-weight: normal;
+}
+
+#infoModal .modal-content-grid div h6 {
+  margin-top: 15px;
+  padding-top: 0;
+  
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'ClanOT-NarrowBook';
+  font-weight: normal;
 }
 
 #infoModal .modal-content-grid div p {
   padding: 0 8%;
 
   font-size: 12px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Arnhem-Blond';
 }
 
 .thumbnail-image {
