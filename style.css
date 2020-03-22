@@ -232,6 +232,28 @@ header {
 
 }
 
+#infoModal .modal-content {
+  margin: 0; /* 15% from the top and centered */
+  padding: 20px;
+  width: 98%; /* Could be more or less, depending on screen size */
+  height: 100%;
+
+  background-image: url('assets/background-info.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#infoModal .modal-content-grid {
+  padding: 70px 30px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+}
+
 #contactModal .modal-content-grid div {
   position: absolute;
   bottom: 150px;
@@ -242,6 +264,22 @@ header {
 #contactModal .modal-content-grid div p {
   font-size: 12px;
   font-style: italic;
+}
+
+#infoModal .modal-content-grid div h3, #infoModal .modal-content-grid div h6 {
+  margin-top: 0;
+  padding-top: 0;
+  
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#infoModal .modal-content-grid div p {
+  padding: 0 8%;
+
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .thumbnail-image {

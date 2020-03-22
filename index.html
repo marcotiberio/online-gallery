@@ -39,20 +39,10 @@
       <p class="button" id="button-about">START</p>
     </div>
     <div data-toggle="" data-target="#" style="text-align: center;">
-      <p class="button" id="button-about">INFO</p>
+      <p class="button" id="button-info">INFO</p>
     </div>
     <div style="text-align: center;">
       <p class="button" id="button-archive">THUMBNAILS</p>
-      <!-- <div class="navigation" id="navigation-menu">
-        <ul style="list-style-type:none">
-          <li class="menu-button" onclick="changePic0()">Home</li>
-          <li class="menu-button" onclick="changePic1()">Testphoto001, 2019</li>
-          <li class="menu-button" onclick="changePic2()">Testphoto002, 2019</li>
-          <li class="menu-button" onclick="changePic3()">Testphoto003, 2019</li>
-          <li class="menu-button" onclick="changePic4()">Testphoto004, 2019</li>
-          <li class="menu-button" onclick="changePic5()">Testphoto005, 2019</li>
-        </ul>
-      </div> -->
     </div>
     <div data-toggle="modal" data-target="#" style="text-align: right;">
       <p class="button" id="button-contact">CONTACT</p>
@@ -187,6 +177,70 @@
             Opening Hours:<br>
             Tue - Fri 13 - 17.00<br>
             Saturday by appointment only
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal Info -->
+  <div id="infoModal" class="modal">
+
+    <!-- Modal Info - Content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-content-grid">
+        <div>
+          <h3>Auction Results</h3>
+          <hr style="width: 30%;">
+          <h6>Phillips London</h6>
+          <p>
+            Bastiaan Woudt sets new auction record 
+            at Phillips London
+            <br><br>
+            <i>End of October 2019, the photograph “Thula” (2017) by Dutch artist Bastiaan Woudt (b. 1987) was 
+            auctioned for the exceptional amount of £ 35.000 (over € 40.000). 
+            The “artist proof” of this sold-out work far exceeded its 
+            estimate of £18.000 - £22.000.</i>
+            <br><br>
+            Never before has such a young Dutch photographer (age 32) sold a work for such a high amount. 
+            In recent years, this number has not even been reached by any Dutch photograph. 
+            With this sale, Woudt joins the ranks of the most expensive photographers from the Netherlands, 
+            such as Rineke Dijkstra, Desiree Dolron, Ruud van Empel or Erwin Olaf. 
+            <br><br>
+            The work was auctioned at the latest edition of ULTIMATE, an auction held by Phillips in London. 
+            Eight exclusive photographs – the “ultimate” works by these artists – were carefully selected by 
+            the auction house. The auction also included unique and sold-out works by masters such as Wolfgang 
+            Tillmans and Peter Beard, alongside a small number of photographs never auctioned before, such as 
+            the one by Woudt. 
+          </p>
+        </div>
+        <div></div>
+        <div></div>
+        <div>
+          <h3>Auction Results</h3>
+          <hr style="width: 30%;">
+          <h6>Phillips London</h6>
+          <p>
+            Bastiaan Woudt sets new auction record 
+            at Phillips London
+            <br><br>
+            End of October 2019, the photograph “Thula” (2017) by Dutch artist Bastiaan Woudt (b. 1987) was 
+            auctioned for the exceptional amount of £ 35.000 (over € 40.000). 
+            The “artist proof” of this sold-out work far exceeded its 
+            estimate of £18.000 - £22.000.
+            <br><br>
+            Never before has such a young Dutch photographer (age 32) sold a work for such a high amount. 
+            In recent years, this number has not even been reached by any Dutch photograph. 
+            With this sale, Woudt joins the ranks of the most expensive photographers from the Netherlands, 
+            such as Rineke Dijkstra, Desiree Dolron, Ruud van Empel or Erwin Olaf. 
+            <br><br>
+            The work was auctioned at the latest edition of ULTIMATE, an auction held by Phillips in London. 
+            Eight exclusive photographs – the “ultimate” works by these artists – were carefully selected by 
+            the auction house. The auction also included unique and sold-out works by masters such as Wolfgang 
+            Tillmans and Peter Beard, alongside a small number of photographs never auctioned before, such as 
+            the one by Woudt. 
           </p>
         </div>
       </div>
@@ -340,6 +394,7 @@
     $("#button-about").click( function() { $("#text-about").toggle(); } );
     $("#button-archive").click( function() { $("#thumbnailsModal").toggle(); } );
     $("#button-contact").click( function() { $("#contactModal").toggle(); } );
+    $("#button-info").click( function() { $("#infoModal").toggle(); } );
     $("#picname").click( function() { $("#picname-info").toggle(); } );
 
   </script>
