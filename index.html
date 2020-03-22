@@ -83,7 +83,7 @@
           <img src="assets/thumbnails/j.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">"J", 2020</p>
         </div>
-        <div class="thumbnail" onclick="changePic5()">
+        <div class="thumbnail">
           <img src="assets/thumbnails/halo.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">Halo, 2019</p>
         </div>
@@ -272,7 +272,7 @@
           <i>Enjoy your virtual gallery tour from the Kahmann Gallery team.</i>
         </p>
         <br><br><br>
-        <p onclick="changePicStart()" style="text-align: right;">Just click here for the next page ></p>
+        <p id="clickhere" onclick="changePicStart()" style="text-align: right;">Just click here for the next page ></p>
       </div>
     </div>
     <div></div>
@@ -420,6 +420,13 @@
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
     $("#button-about").click( function() { $("#text-about").toggle(); } );
 
+    $("#button-start").click( function() { 
+      $("#thumbnailsModal").hide();
+      $("#contactModal").hide();
+      $("#infoModal").hide();
+      $("#sticker-start").hide();
+    } );
+
     $("#button-thumbnails").click( function() { 
       $("#thumbnailsModal").toggle();
       $("#contactModal").hide();
@@ -458,7 +465,7 @@
       // document.getElementById('picname').style.left = "63%";
     }
     function changePic0() {
-      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_000.jpg)";
+      document.getElementById('section').style.backgroundImage="url(assets/backgrounds/background_stretch.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
       document.getElementById('thumbnailsModal').style.display = "none";
       document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";
@@ -467,7 +474,7 @@
       // document.getElementById('picname').style.left = "63%";
     }
     function changePic1() {
-      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_002.jpg)";
+      document.getElementById('section').style.backgroundImage="url(assets/backgrounds/background_torso.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
       document.getElementById('thumbnailsModal').style.display = "none";
       document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";
@@ -476,7 +483,7 @@
       // document.getElementById('picname-info').style.left = "36.8%";
     }
     function changePic2() {
-      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_003.jpg)";
+      document.getElementById('section').style.backgroundImage="url(assets/backgrounds/background_secrete1.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
       document.getElementById('thumbnailsModal').style.display = "none";
       document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";
@@ -485,7 +492,7 @@
       // document.getElementById('picname-info').style.left = "36.8%";
     }
     function changePic3() {
-      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_004.jpg)";
+      document.getElementById('section').style.backgroundImage="url(assets/backgrounds/background_curve.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
       document.getElementById('thumbnailsModal').style.display = "none";
       document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";
@@ -494,7 +501,7 @@
       // document.getElementById('picname-info').style.left = "36.8%";
     }
     function changePic4() {
-      document.getElementById('section').style.backgroundImage="url(assets/bastiaanwoudt_005.jpg)";
+      document.getElementById('section').style.backgroundImage="url(assets/backgrounds/background_j.jpg)";
       document.getElementById('section').style.transition = "ease-in 0.2s";
       document.getElementById('thumbnailsModal').style.display = "none";
       document.getElementById('thumbnailsModal').style.transition = "ease-out 0.5s";

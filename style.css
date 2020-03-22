@@ -421,14 +421,17 @@ header {
   letter-spacing: 1px;
 }
 
-#sticker-start #intro a {
+#sticker-start #intro p {
   color: black;
+}
+
+#clickhere {
   text-decoration: none;
 }
 
-#sticker-start #intro a:hover {
+#clickhere:hover {
+  cursor: pointer;
   text-decoration: underline;
-  transition: all .5s ease-in;
 }
 
 
