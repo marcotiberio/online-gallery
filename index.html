@@ -33,10 +33,16 @@
 
   <header>
     <div data-toggle="modal" data-target="#aboutModal">
-      <p id="button-about">KAHMANN GALLERY</p>
+      <p class="button" id="button-about">KAHMANN GALLERY</p>
     </div>
-    <div style="text-align: right;">
-      <p id="button-archive">THUMBNAILS</p>
+    <div data-toggle="" data-target="#" style="text-align: center;">
+      <p class="button" id="button-about">START</p>
+    </div>
+    <div data-toggle="" data-target="#" style="text-align: center;">
+      <p class="button" id="button-about">INFO</p>
+    </div>
+    <div style="text-align: center;">
+      <p class="button" id="button-archive">THUMBNAILS</p>
       <!-- <div class="navigation" id="navigation-menu">
         <ul style="list-style-type:none">
           <li class="menu-button" onclick="changePic0()">Home</li>
@@ -48,12 +54,22 @@
         </ul>
       </div> -->
     </div>
+    <div data-toggle="modal" data-target="#" style="text-align: right;">
+      <p class="button" id="button-contact">CONTACT</p>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div data-toggle="" data-target="#" style="text-align: right;">
+      <p class="button" id="button-about">SHOP</p>
+    </div>
   </header>
 
-  <!-- The Modal -->
+  <!-- Modal Thumbnails -->
   <div id="thumbnailsModal" class="modal">
 
-    <!-- Modal content -->
+    <!-- Modal Thumbnails - Content -->
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="modal-content-grid">
@@ -147,12 +163,31 @@
         </div>
         <div class="thumbnail">
         </div>
-        <div class="thumbnail">
-          <img src="assets/thumbnail-book.jpg" alt="thumgnail1" class="thumbnail-image">
-          <div class="caption-books">
-            <div><p class="thumbnail-caption">Books</p></div>
-            <div><p class="thumbnail-caption" id="buttonBuy">BUY</p></div>
-          </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal Contact -->
+  <div id="contactModal" class="modal">
+
+    <!-- Modal Thumbnails - Content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-content-grid">
+        <div>
+          <h5>KAHMANN GALLERY</h5>
+          <hr><br>
+          <p>Lindengracht 35<br>
+            1015 KB Amsterdam<br>
+            The Netherlands<br>
+            +31 20 846 0770<br>
+            info @kahmanngallery.com<br>
+            Opening Hours:<br>
+            Tue - Fri 13 - 17.00<br>
+            Saturday by appointment only
+          </p>
         </div>
       </div>
     </div>
@@ -270,19 +305,11 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="modals.js"></script>
   <script src="zoom.js"></script>
 
 
   <script>
-
-    // $("#artist").click( function() { 
-    //   $("#text-artist").toggle();
-    //   $("#text1").hide();
-    //   $("#text2").hide();
-    //   $("#text3").hide();
-    //   $("#video2").hide();
-    // } );
 
     $("#button-archive").click( function() { 
       $("#navigation-menu").toggle();
@@ -308,39 +335,12 @@
       $("#navigation-menu").hide();
     } );
 
-    // $("#entry3").click( function() { 
-    //   $("#text3").toggle();
-    //   $("#text-artist").hide();
-    //   $("#text1").hide();
-    //   $("#text2").hide();
-    //   $("#video2").hide();
-    // } );
-
 
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
     $("#button-about").click( function() { $("#text-about").toggle(); } );
+    $("#button-archive").click( function() { $("#thumbnailsModal").toggle(); } );
+    $("#button-contact").click( function() { $("#contactModal").toggle(); } );
     $("#picname").click( function() { $("#picname-info").toggle(); } );
-
-
-  // LOADER
-  // $(function() {
-  //     // setTimeout() function will be fired after page is loaded
-  //     // it will wait for 5 sec. and then will fire
-  //     // $("#successMessage").hide() function
-  //     setTimeout(function() {
-  //       $("#loader").fadeOut()
-  //     }, 2000);
-  //   });
-
-
-    // ZOOM
-		// document.querySelector( '.container' ).addEventListener( 'click', function( event ) {
-		// 	event.preventDefault();
-		// 	zoom.to({
-    //     element: event.target,
-    //     padding: 40
-    //   });
-		// } );
 
   </script>
 
@@ -411,33 +411,5 @@
         "assets/bastiaanwoudt_005.jpg"
     )
   </script>
-
-  <script>
-    // Get the modal
-    var modal = document.getElementById("thumbnailsModal");
-    
-    // Get the button that opens the modal
-    var btn = document.getElementById("button-archive");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>  
 
 </body>

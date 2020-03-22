@@ -1,3 +1,5 @@
+/* ClanOT */
+
 @font-face {
   font-family: 'ClanOT-NarrowBook';
   font-style: normal;
@@ -112,11 +114,12 @@ p {
 
 header {
   position: fixed;
-  width: 98%;
+  width: 90%;
   top: 0;
+  padding: 0 10%;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -124,23 +127,26 @@ header {
   font-size: 14px;
   font-weight: 400;
 
-  padding: 1%;
+  padding: 1.5% 5%;
 
   z-index: 4000;
 }
 
+.button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 #button-about {
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 #button-about:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  
 }
 
 #button-archive:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  
 }
 
 #navigation-menu {
@@ -152,8 +158,7 @@ header {
 }
 
 .menu-button:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  
 }
 
 #text-about {
@@ -206,7 +211,7 @@ header {
 }
 
 /* Modal Content Grid */
-.modal-content-grid {
+#thumbnailsModal .modal-content-grid {
   padding: 30px;
 
   display: grid;
@@ -214,6 +219,29 @@ header {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 20px;
+}
+
+#contactModal .modal-content-grid {
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+
+}
+
+#contactModal .modal-content-grid div {
+  position: absolute;
+  bottom: 150px;
+  right: 150px;
+  text-align: left;
+}
+
+#contactModal .modal-content-grid div p {
+  font-size: 12px;
+  font-style: italic;
 }
 
 .thumbnail-image {
@@ -241,6 +269,7 @@ header {
 
 /* The Close Button */
 .close {
+  display: none;
   position: fixed;
   right: 10px;
   top: 35px;
@@ -253,6 +282,11 @@ header {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.contact-page {
+  width: 100%;
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
