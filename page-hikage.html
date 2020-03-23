@@ -67,7 +67,7 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="modal-content-grid">
-        <div id="thumbnail" onclick="changePic1()">
+        <div id="thumbnail" onclick="changePic5()">
           <img src="assets/thumbnails/stretch.jpg" alt="thumgnail1" class="thumbnail-image">
           <p class="thumbnail-caption">Stretch, 2020</p>
         </div>
@@ -253,57 +253,72 @@
 
   </div>
 
-  <section id="section"> <!-- background -->
+  <section id="section-j" 
+          style="position: fixed;
+            top: 0;
+            right: 0;
+            width: 100vw;
+            height: 100vh;
+          
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+          
+            background-image: url('assets/backgrounds/background_j.jpg');
+            background-size: cover;
+            background-position: center;"> <!-- background -->
     <div></div>
-    <div id="sticker-start">
-      <div id="header">
-        <div>
-          <img src="assets/KG Logo new.png" alt="thumgnail1" id="kahmann-logo">
-        </div>
-        <div>
-          <img src="assets/paris-photo-logo.jpg" alt="thumgnail1" id="parisphoto-logo" style="width: 20%;">
-        </div>
-      </div>
-      <div id="intro">
-        <p>
-          Unfortunately Paris Photo New York (April 2-5) has been postponed, but we wanted to give you the 
-          opportunity to still see the newest works and the recently launched monograph ‘Hidden’ of Bastiaan Woudt. 
-          Now that the fair has probably been postponed for a year, we don’t want to deny you those beautiful works. 
-          We therefore have prepared a virtual exhibition of all the works we would have presented during the fair. 
-          Take a look around and if you want to know more about availability or if you have any other questions, 
-          just click on the Thumbnail page.
-          <br><br>
-          Enjoy your virtual gallery tour from the Kahmann Gallery team.
-        </p>
-        <br><br><br>
-        <p id="clickhere" onclick="changePicStart()" style="text-align: right;">Just click here for the next page ></p>
-      </div>
-    </div>
     <div></div>
-    <!-- <img id="image" src="assets/test photo/Abdul_Waled_exp_final.jpg" alt=""> -->
+    <div></div>
   </section>
 
   <div class="container">
-    <div class="entry" id="picname"></div>
-    <div id="picname-info">
+    <div class="entry" id="picname" 
+          style="
+          display: block;
+          position: absolute;
+          top: 43%;
+          left: 58%;
+          width: 3.5%;
+          height: 5%;
+          color: black;
+          background-color: white;
+          font-weight: 400;
+          font-size: 15px;
+          cursor: pointer;
+          margin: 0;
+          padding: 0;"></div>
+    <div id="picname-info" 
+          style="
+          display: none;
+          position: absolute;
+          top: 43%;
+          left: 58%;
+          width: 150px;
+          height: auto;
+          padding: 10px;
+          color: black;
+          background-color: white;
+          font-family: 'ClanOT-NarrowMedium';
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 1rem;
+          letter-spacing: 1px;
+          cursor: pointer;
+          margin: 0;
+          /* border: 3px solid red; */
+          -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+          -moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+          box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
+          z-index: 2001;">
       Varusa Hat, 2016<br>
       Archival Pigment Print<br>
       Size: 130 x 85 cm.<br>
       Edition of 3<br><br><br>
       € 15.000,-
     </div>
-    <div class="entry" id="entry1"></div>
-    <div class="entry" id="entry2">+</div>
-    <div class="entry" id="entry3">+</div>
-    <!-- <div class="blink-container" id="blink1">
-      <div class="blink-pulse"></div>
-    </div>
-    <div class="blink-container" id="blink2">
-      <div class="blink-pulse"></div>
-    </div>
-    <div class="blink-container" id="blink3">
-      <div class="blink-pulse"></div>
-    </div> -->
   </div>
   <div class="text">
       <!-- <img id="imgVedelago" src="assets/vedelago.jpg"> -->

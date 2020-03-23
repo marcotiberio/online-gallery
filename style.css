@@ -59,20 +59,20 @@
 
   @font-face {
     font-family: 'arnhem';
-    src: url('assets/Arnhem-Blond.eot');
-    src: url('assets/Arnhem-Blond.eot?#iefix') format('embedded-opentype'),
-        url('assets/Arnhem-Blond.woff') format('woff'),
-        url('assets/Arnhem-Blond.ttf') format('truetype');
+    src: url('ssets/font/Arnhem-Blond.eot');
+    src: url('ssets/font/Arnhem-Blond.eot?#iefix') format('embedded-opentype'),
+        url('ssets/font/Arnhem-Blond.woff') format('woff'),
+        url('ssets/font/Arnhem-Blond.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'arnhem';
-    src: url('assets/Arnhem-BlondItalic.eot');
-    src: url('assets/Arnhem-BlondItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/Arnhem-BlondItalic.woff') format('woff'),
-        url('assets/Arnhem-BlondItalic.ttf') format('truetype');
+    src: url('ssets/font/Arnhem-BlondItalic.eot');
+    src: url('ssets/font/Arnhem-BlondItalic.eot?#iefix') format('embedded-opentype'),
+        url('ssets/font/Arnhem-BlondItalic.woff') format('woff'),
+        url('ssets/font/Arnhem-BlondItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
   }
@@ -258,7 +258,7 @@ header {
   margin: 0; /* 15% from the top and centered */
   padding: 20px;
   width: 98%; /* Could be more or less, depending on screen size */
-  height: 150%;
+  height: 100%;
 }
 
 /* Modal Content Grid */
@@ -547,8 +547,8 @@ header {
 
 #entry1 {
   position: absolute;
-  top: 72%;
-  left: 11%;
+  bottom: 21%;
+  left: 14%;
   width: 11%;
   height: 10%;
   color: black;
@@ -625,7 +625,7 @@ header {
   position: absolute;
   width: 20%;
   top: 10%;
-  left: 7%;
+  left: 9%;
 
   padding: 1%;
   z-index: 101;
@@ -816,6 +816,26 @@ footer {
 @media only screen 
   and (max-width: 375px) { 
 
+    header {
+      position: fixed;
+      width: 90%;
+      top: 0;
+      padding: 0 10%;
+    
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    
+      font-size: 10px;
+      font-weight: 400;
+    
+      padding: 1.5% 5%;
+    
+      z-index: 4000;
+    }
+
     #loader {
       display: block;
       position: absolute;
@@ -843,10 +863,6 @@ footer {
 
     #loader {
       display: none;
-    }
-
-    header {
-      top: %;
     }
 
 }
