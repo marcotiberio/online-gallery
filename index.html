@@ -32,8 +32,10 @@
   </div>
 
   <header>
-    <div data-toggle="modal" data-target="#aboutModal">
-      <p class="button" id="button-about">KAHMANN GALLERY</p>
+    <div>
+      <p class="button" id="button-about">
+        <a href="https://www.kahmanngallery.com/" target="_blank">KAHMANN GALLERY</a>
+      </p>
     </div>
     <div data-toggle="" data-target="#" style="text-align: center;">
       <p class="button" id="button-start" onclick="changePicStart()">START</p>
@@ -52,7 +54,9 @@
     <div></div>
     <div></div>
     <div data-toggle="" data-target="#" style="text-align: right;">
-      <p class="button" id="button-about">SHOP</p>
+      <p class="button" id="button-about">
+        <a href="https://www.kahmanngallery.com/prints" target="_blank">SHOP</a>
+      </p>
     </div>
   </header>
 
@@ -418,7 +422,6 @@
 
 
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
-    $("#button-about").click( function() { $("#text-about").toggle(); } );
 
     $("#button-start").click( function() { 
       $("#thumbnailsModal").hide();
