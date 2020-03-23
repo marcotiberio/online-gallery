@@ -322,11 +322,11 @@ header {
 
   font-size: 12px;
   font-family: 'arnhem';
-  font-style: italic;
 }
 
 .thumbnail-image {
   width: 80%;
+  transition: 0.2s;
 }
 
 .thumbnail-image:hover {
@@ -439,10 +439,12 @@ header {
 #sticker-start #intro p {
   color: black;
   font-family: 'arnhem';
+  font-style: italic;
 }
 
 #clickhere {
   text-decoration: none;
+  font-style: normal !important;
 }
 
 #clickhere:hover {
