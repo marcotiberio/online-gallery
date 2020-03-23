@@ -57,18 +57,24 @@
 
 /* Arnhem */
 
-@font-face {
-  font-family: 'Arnhem-Blond';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Arnhem-Blond'), url('assets/font/Arnhem-Blond.otf') format('otf');
+  @font-face {
+    font-family: 'arnhem';
+    src: url('assets/Arnhem-Blond.eot');
+    src: url('assets/Arnhem-Blond.eot?#iefix') format('embedded-opentype'),
+        url('assets/Arnhem-Blond.woff') format('woff'),
+        url('assets/Arnhem-Blond.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
   }
 
-@font-face {
-  font-family: 'Arnhem-BlondItalic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Arnhem-BlondItalic'), url('assets/font/Arnhem-BlondItalic.otf') format('otf');
+  @font-face {
+    font-family: 'arnhem';
+    src: url('assets/Arnhem-BlondItalic.eot');
+    src: url('assets/Arnhem-BlondItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/Arnhem-BlondItalic.woff') format('woff'),
+        url('assets/Arnhem-BlondItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
   }
 
 /*--------------------------------------------------------------
@@ -315,7 +321,8 @@ header {
   padding: 0 8%;
 
   font-size: 12px;
-  font-family: 'Arnhem-Blond';
+  font-family: 'arnhem';
+  font-style: italic;
 }
 
 .thumbnail-image {
@@ -423,7 +430,7 @@ header {
 #sticker-start #intro {
   padding: 3% 15% 1% 10%;
   
-  font-family: 'Arnhem-Blond';
+  font-family: 'arnhem';
   font-size: 14px;
   line-height: 1.2rem;
   letter-spacing: 1px;
@@ -431,7 +438,7 @@ header {
 
 #sticker-start #intro p {
   color: black;
-  font-family: 'Arnhem-Blond';
+  font-family: 'arnhem';
 }
 
 #clickhere {
