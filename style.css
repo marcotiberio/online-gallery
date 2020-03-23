@@ -258,7 +258,7 @@ header {
   margin: 0; /* 15% from the top and centered */
   padding: 20px;
   width: 98%; /* Could be more or less, depending on screen size */
-  height: 100%;
+  height: 150%;
 }
 
 /* Modal Content Grid */
