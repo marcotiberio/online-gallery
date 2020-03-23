@@ -304,6 +304,13 @@ header {
   font-weight: normal;
 }
 
+#infoModal .modal-content-grid hr {
+  border: 0;
+  width: 30%;
+  height: 0.5px;
+  background: #333;
+}
+
 #infoModal .modal-content-grid div p {
   padding: 0 8%;
 
