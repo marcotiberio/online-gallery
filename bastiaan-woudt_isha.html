@@ -51,8 +51,12 @@
     </div>
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
+    <div style="text-align: center;">
+      <p class="button" onclick="changePic8()">BACK</p>
+    </div>
+    <div style="text-align: center;">
+      <p class="button" onclick="changePic10()">NEXT</p>
+    </div>
     <div data-toggle="" data-target="#" style="text-align: right;">
       <p class="button" id="button-about">
         <a href="https://www.kahmanngallery.com/prints" target="_blank">SHOP</a>
@@ -157,7 +161,7 @@
         </div>
         <div id="thumbnail" onclick="changePic23()">
         </div>
-        <div id="thumbnail">
+        <div id="thumbnail" onclick="changePicBooks()">
           <img src="assets/thumbnail-book.jpg" alt="thumgnail1" class="thumbnail-image">
           <div class="caption-books">
             <div><p class="thumbnail-caption">Books</p></div>
@@ -253,7 +257,7 @@
 
   </div>
 
-  <section id="section-j" 
+  <section id="section-isha" 
           style="position: fixed;
             top: 0;
             right: 0;
@@ -266,7 +270,7 @@
             grid-column-gap: 0px;
             grid-row-gap: 0px;
           
-            background-image: url('assets/backgrounds/background_j.jpg');
+            background-image: url('assets/backgrounds/background_isha.jpg');
             background-size: cover;
             background-position: center;"> <!-- background -->
     <div></div>
@@ -279,8 +283,8 @@
           style="
           display: block;
           position: absolute;
-          top: 43%;
-          left: 58%;
+          top:  41%;
+          left: 40%;
           width: 3.5%;
           height: 5%;
           color: black;
@@ -294,8 +298,8 @@
           style="
           display: none;
           position: absolute;
-          top: 43%;
-          left: 58%;
+          top:  41%;
+          left: 31.7%;
           width: 150px;
           height: auto;
           padding: 10px;
@@ -313,11 +317,12 @@
           -moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
           box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
           z-index: 2001;">
-      Varusa Hat, 2016<br>
+      Isha, 2020<br>
       Archival Pigment Print<br>
-      Size: 130 x 85 cm.<br>
+      Size: 45 x 60 cm<br>
       Edition of 3<br><br><br>
-      € 15.000,-
+      <span>€ 3.500,-</span>
+      <span id="closePicnameInfo" style="float: right;">X</span>
     </div>
   </div>
   <div class="text">
@@ -468,6 +473,8 @@
     
     
     $("#picname").click( function() { $("#picname-info").toggle(); } );
+
+    $("#closePicnameInfo").click( function() { $("#picname-info").toggle(); } );
 
   </script>
 

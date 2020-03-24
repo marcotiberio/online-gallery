@@ -42,7 +42,7 @@ function changePic5() {
 
 // 006 - HALO
 function changePic6() {
-  window.location.replace("#");
+  window.location.replace("bastiaan-woudt_halo.html");
 }
 
 // 007 - ECLIPSE
@@ -57,17 +57,17 @@ function changePic8() {
 
 // 009 - ISHA
 function changePic9() {
-  window.location.replace("#");
+  window.location.replace("bastiaan-woudt_isha.html");
 }
 
 // 010 - RABIA 2
 function changePic10() {
-  window.location.replace("#");
+  window.location.replace("bastiaan-woudt_rabia2.html");
 }
 
 // 011 - ARC
 function changePic11() {
-  window.location.replace("#");
+  window.location.replace("bastiaan-woudt_arc.html");
 }
 
 // 012 - DISK
@@ -95,7 +95,7 @@ function changePic16() {
   window.location.replace("bastiaan-woudt_hikage.html");
 }
 
-// 017 - BASE CIRCLE
+// 017 - BARE CIRCLE
 function changePic17() {
   window.location.replace("bastiaan-woudt_bare-circle.html");
 }

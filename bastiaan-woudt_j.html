@@ -51,8 +51,12 @@
     </div>
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
+    <div style="text-align: center;">
+      <p class="button" onclick="changePic4()">BACK</p>
+    </div>
+    <div style="text-align: center;">
+      <p class="button" onclick="changePic6()">NEXT</p>
+    </div>
     <div data-toggle="" data-target="#" style="text-align: right;">
       <p class="button" id="button-about">
         <a href="https://www.kahmanngallery.com/prints" target="_blank">SHOP</a>
@@ -317,7 +321,8 @@
       Archival Pigment Print<br>
       Size: 90 x 120 cm<br>
       Edition of 10<br><br><br>
-      € 6.500,-
+      <span>€ 6.500,-</span>
+      <span id="closePicnameInfo" style="float: right;">X</span>
     </div>
   </div>
   <div class="text">
@@ -437,6 +442,9 @@
 
 
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
+    
+    $("#closePicnameInfo").click( function() { $("#picname-info").toggle(); } );
+
 
     $("#button-start").click( function() { 
       $("#thumbnailsModal").hide();
