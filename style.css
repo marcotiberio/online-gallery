@@ -872,7 +872,7 @@ footer {
     #sticker-start #intro {
       padding: 3% 15% 1% 10%;
       font-family: 'arnhem';
-      font-size: 8px;
+      font-size: 10px;
       line-height: 1rem;
       letter-spacing: 1px;
   }
@@ -890,8 +890,47 @@ footer {
     height: 140%;
   }
 
-  #infoModal .modal-content-grid p {
+  #infoModal .modal-content-grid {
+    padding: 30px 30px;
+  }
+
+  #infoModal .modal-content {
+    background-position: -100px 0px;
+  }
+
+  #modal-content-grid_bio {
+    margin-right: -70px;
+  }
+
+  #modal-content-grid_auction {
+    margin-left: -90px;
+  }
+
+  #infoModal .modal-content-grid div h4 {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'ClanOT-NarrowBook';
+    font-weight: normal;
+
+    font-size: 12px;
+  }
+
+  #infoModal .modal-content-grid div h6 {
+    margin-top: 5px;
+    padding-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'ClanOT-NarrowBook';
+    font-weight: normal;
+  }
+
+  #infoModal .modal-content-grid div p {
+    padding: 0 8%;
     font-size: 8px;
+    line-height: 0.8rem;
+    font-family: 'arnhem';
   }
 
 }
