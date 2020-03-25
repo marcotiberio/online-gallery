@@ -158,16 +158,22 @@ p {
 
 #waiter {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
   font-family: 'ClanOT-NarrowBook';
   background-color: white;
   color: black;
-  text-align: center;
+  text-align: left;
 
   z-index: 4999;
 }
@@ -176,8 +182,8 @@ p {
   padding: 10%;
 }
 
-.waiter-text {
-  font-size: 60px;
+.waiter-text p {
+  font-size: 50px;
 }
 
 /*--------------------------------------------------------------
