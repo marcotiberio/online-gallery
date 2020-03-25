@@ -53,6 +53,14 @@
           <br>
           featuring Bastiaan Woudt
         </h1>
+        <br>
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
       </div>
     </div>
     <div></div>
@@ -436,7 +444,7 @@
 
     $(document).ready(function() {
     window.onload = function () {
-    $('#waiter').fadeOut(500);
+    $('#waiter').fadeOut(500, function(){ $('#waiter').remove(); } );
     }
     });
 
