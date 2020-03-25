@@ -525,12 +525,12 @@ header {
   font-family: 'arnhem';
 }
 
-.thumbnail-image {
+.lazy {
   width: 80%;
   transition: 0.2s;
 }
 
-.thumbnail-image:hover {
+.lazy:hover {
   cursor: pointer;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
