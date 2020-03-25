@@ -1,18 +1,6 @@
 // START
 function changePicStart() {
   window.location.replace("index.html");
-  // document.getElementById('section').style.backgroundImage="url(assets/backgrounds/background_disk.jpg)";
-  // document.getElementById('section').style.transition = "ease-in 0.2s";
-  // document.getElementById('sticker-start').style.display = "none";
-  // document.getElementById('infoModal').style.display = "none";
-  // document.getElementById('contactModal').style.display = "none";
-
-  // document.getElementById('picname').style.display = "block";
-  // document.getElementById('picname').style.transition = "ease-in 0.2s";
-  // document.getElementById('picname').style.top = "44%";
-  // document.getElementById('picname').style.left = "67%";
-  // document.getElementById('picname-info').style.top = "44%";
-  // document.getElementById('picname-info').style.left = "67%";
 }
 
 // 001 - STRETCH
