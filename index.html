@@ -42,6 +42,16 @@
 
 <body>
 
+  <div id="waiter">
+    <h1 class="waiter-text">
+      You are about to enter
+      <br>
+      Kahmann Gallery Virtual exhibitions
+      <br>
+      featuring Bastiaan Woudth
+    </h1>
+  </div>
+
   <div id="loader">
     <h1 class="loader-text">
       For a better experience,
@@ -417,6 +427,12 @@
 
 
   <script>
+
+    $(document).ready(function() {
+    window.onload = function () {
+    $('#waiter').fadeOut(500, function(){ $('#waiter').remove(); } );
+    }
+    });
 
     $("#button-archive").click( function() { 
       $("#navigation-menu").toggle();
