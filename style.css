@@ -157,33 +157,40 @@ p {
 --------------------------------------------------------------*/
 
 #waiter {
-  display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  font-family: 'ClanOT-NarrowBook';
+  font-family: 'arnhem';
+  font-style: italic;
   background-color: white;
   color: black;
-  text-align: left;
+  text-align: center;
 
   z-index: 4999;
 }
 
 .waiter-text {
-  padding: 10%;
+  padding-top: 20%;
+  /* height: 80%;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2); */
+
 }
 
-.waiter-text p {
-  font-size: 50px;
+.waiter-text h1 {
+  font-size: 30px;
+  font-weight: normal;
 }
 
 /*--------------------------------------------------------------

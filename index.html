@@ -44,26 +44,15 @@
 
   <div id="waiter">
     <div></div>
-    <div id="sticker-start">
-      <div id="header">
-        <div>
-          <img src="assets/KG Logo new.png" alt="thumgnail1" id="kahmann-logo">
-        </div>
-        <div>
-          <img src="assets/paris-photo-logo.jpg" alt="thumgnail1" id="parisphoto-logo" style="width: 20%;">
-        </div>
-      </div>
-      <div id="intro">
-        <p>
+    <div>
+      <div class="waiter-text">
+        <h1>
           You are about to enter
           <br>
           Kahmann Gallery Virtual exhibition
           <br>
-          featuring Bastian Woudt
-        </p>
-        <br><br>
-        <p id="clickhere" onclick="changePic12()" style="text-align: right;">Just click here for the next page ></p>
-        <br><br>
+          featuring Bastiaan Woudth
+        </h1>
       </div>
     </div>
     <div></div>
@@ -445,11 +434,11 @@
 
   <script>
 
-    $(document).ready(function() {
-    window.onload = function () {
-    $('#waiter').fadeOut(500, function(){ $('#waiter').remove(); } );
-    }
-    });
+    // $(document).ready(function() {
+    // window.onload = function () {
+    // $('#waiter').fadeOut(500, function(){ $('#waiter').remove(); } );
+    // }
+    // });
 
     $("#button-archive").click( function() { 
       $("#navigation-menu").toggle();
@@ -511,7 +500,7 @@
 
   </script>
 
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     var images = new Array()
     function preload() {
         for (i = 0; i < preload.arguments.length; i++) {
@@ -522,6 +511,6 @@
     preload(
         "assets/backgrounds/background_start.jpg"
     )
-  </script> -->
+  </script>
 
 </body>
