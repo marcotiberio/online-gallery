@@ -1019,7 +1019,7 @@ footer {
     font-family: 'ClanOT-NarrowBook';
     font-weight: normal;
 
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #infoModal .modal-content-grid div h6 {
@@ -1029,6 +1029,8 @@ footer {
     text-transform: uppercase;
     font-family: 'ClanOT-NarrowBook';
     font-weight: normal;
+
+    font-size: 10px;
   }
 
   #infoModal .modal-content-grid div p {
