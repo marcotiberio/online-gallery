@@ -94,7 +94,7 @@ html {
   margin: 0;
   padding: 0;
 
-  overflow: auto;
+  /* overflow: auto; */
 
   opacity: 1;
   animation: fadeIn 1.5s ease;
@@ -586,6 +586,9 @@ header {
   margin: 0;
   padding: 0;
 
+  text-align: center;
+  text-decoration: none !important;
+
   /* border: 1px solid black; */
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
@@ -596,6 +599,12 @@ header {
 
 #picname:hover {
   text-decoration: underline;
+}
+
+#picnameMoreInfo {
+  display: none;
+  font-size: 8px;
+  padding-top: 25%;
 }
 
 #picname-info {

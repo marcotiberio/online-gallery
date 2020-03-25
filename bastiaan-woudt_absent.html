@@ -292,7 +292,9 @@
           font-size: 15px;
           cursor: pointer;
           margin: 0;
-          padding: 0;"></div>
+          padding: 0;">
+          <p id="picnameMoreInfo">More Info</p>
+    </div>
     <div id="picname-info" 
           style="
           display: none;
@@ -479,6 +481,7 @@
     
     
     $("#picname").click( function() { $("#picname-info").toggle(); } );
+    $("#picname").hover( function() { $("#picnameMoreInfo").toggle(); } );
 
     $("#closePicnameInfo").click( function() { $("#picname-info").toggle(); } );
 
