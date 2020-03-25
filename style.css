@@ -123,6 +123,30 @@ body {
 
 }
 
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: underline;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -593,7 +617,7 @@ header {
   line-height: 1rem;
   letter-spacing: 1px;
 
-  cursor: pointer;
+  cursor: default;
   margin: 0;
 
   /* border: 3px solid red; */
@@ -602,6 +626,10 @@ header {
   box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.75);
 
   z-index: 2001;
+}
+
+#closePicnameInfo {
+  cursor: pointer;
 }
 
 
