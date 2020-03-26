@@ -89,18 +89,18 @@ html {
   padding: 0;
 
   /* overflow: auto; */
-  opacity: 1;
-  animation: fadeIn 2s ease;
+  /* opacity: 1;
+  animation: fadeIn 2s ease; */
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-}
+} */
 
 body {
   height: 100vh;
@@ -117,14 +117,14 @@ body {
   animation: fadeIn 2s ease;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-}
+} */
 
 /* unvisited link */
 a:link {
