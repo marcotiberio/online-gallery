@@ -876,6 +876,14 @@ footer {
       display: none;
     }
 
+    #overlayNavBack {
+      display: none;
+    }
+    
+    #overlayNavNext {
+      display: none;
+    }
+
     header {
       font-size: 10px;
     }
