@@ -894,10 +894,14 @@ footer {
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
       box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
-  }
+    }
+
+    #sticker-start #header {
+      margin-top: 1%;
+    }
 
     #sticker-start #intro {
-      padding: 3% 15% 1% 10%;
+      padding: 0 15% 1% 10%;
       font-family: 'arnhem';
       font-size: 9px;
       line-height: 1rem;
