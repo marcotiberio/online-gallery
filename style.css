@@ -958,4 +958,8 @@ footer {
     margin-top: -30px;
   }
 
+  #picname-info {
+    font-size: 8px;
+  }
+
 }
