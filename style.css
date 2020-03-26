@@ -251,6 +251,10 @@ p {
   display: none;
 }
 
+#rotatephone {
+  width: 50%;
+}
+
 /* @keyframes blinker {
   50% {
     opacity: 0;
@@ -866,6 +870,10 @@ footer {
 
     #loader {
       display: none;
+    }
+
+    #rotatephone {
+      width: 20%;
     }
 
     header {
