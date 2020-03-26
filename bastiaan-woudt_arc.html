@@ -413,10 +413,17 @@
     } );
     
     
-    $("#picname").click( function() { $("#picname-info").toggle(); } );
+    $("#picname").click( function() { 
+      $("#picname-info").toggle(); 
+      $("#picname").toggle(); 
+    } );
+    
     $("#picname").hover( function() { $("#picnameMoreInfo").toggle(); } );
 
-    $("#closePicnameInfo").click( function() { $("#picname-info").toggle(); } );
+    $("#closePicnameInfo").click( function() { 
+      $("#picname-info").toggle(); 
+      $("#picname").toggle();
+    } );
 
   </script>
 

@@ -383,10 +383,6 @@
     });
 
     $("#button-caption").hover( function() { $("#text-caption").toggle(); } );
-    $("#picname").hover( function() { $("#picnameMoreInfo").toggle(); } );
-    
-    $("#closePicnameInfo").click( function() { $("#picname-info").toggle(); } );
-
 
     $("#button-start").click( function() { 
       $("#thumbnailsModal").hide();
@@ -417,7 +413,17 @@
     } );
     
     
-    $("#picname").click( function() { $("#picname-info").toggle(); } );
+    $("#picname").click( function() { 
+      $("#picname-info").toggle(); 
+      $("#picname").toggle(); 
+    } );
+    
+    $("#picname").hover( function() { $("#picnameMoreInfo").toggle(); } );
+
+    $("#closePicnameInfo").click( function() { 
+      $("#picname-info").toggle(); 
+      $("#picname").toggle();
+    } );
 
   </script>
 
